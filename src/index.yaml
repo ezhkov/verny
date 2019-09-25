@@ -1,5 +1,9 @@
 ProjectTitle: verny
 
 PageList:
-- file: page.html
+- file: page-main.html
   ready: 50
+  name: Главная
+- file: page-styles.html
+  ready: 50
+  name: Стили

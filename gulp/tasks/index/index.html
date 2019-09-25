@@ -168,15 +168,7 @@
         font-family: 'Graphik LCG', sans-serif;
         position: relative;
         display: inline-block;
-      }
-
-      .pagelist__title em:before {
-        content: "";
-        position: absolute;
-        bottom: 4px;
-        width: 100%;
-        left: 0;
-        border-top: 1px solid currentColor;
+        font-size: 14px;
       }
 
       .pagelist__title.is-active {
@@ -539,7 +531,7 @@
         <li
         <% if(!page.ready) { %> class="is-notready" <% } %>>
 
-        <a class="pagelist__title <% if(i==1){ %> is-active <% } %>" target="_blank" href="<%= page.file %>"><span><%= i %>.</span><em><%= _.split(page.file, '.', 1) %></em></a>
+        <a class="pagelist__title <% if(i==1){ %> is-active <% } %>" target="_blank" href="<%= page.file %>"><span><%= i %>. <%= page.name %></span><em>(<%= page.file %>)</em></a>
         <a href="<%= page.file %>" class="pagelist__url">
           <svg class="icon icon-link">
             <use xlink:href="#icon-link"></use>
