@@ -1,3 +1,3 @@
-import sayHello from './lib/sayHello';
+import Header from './header';
 
-sayHello();
+Header.initEvents();

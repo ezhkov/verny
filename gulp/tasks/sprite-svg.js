@@ -15,8 +15,6 @@ gulp.task('sprite:svg', () => gulp
     gulpcheerio({
       run: function($, file) {
 
-        $('[fill]:not([fill="currentColor"])').removeAttr('fill');
-        $('[stroke]').removeAttr('stroke');
         let w,h,size;
         if($('svg').attr('height')){
             w = $('svg').attr('width').replace(/\D/g,'');
@@ -78,7 +76,7 @@ gulp.task('sprite:svg', () => gulp
 		;
     cb();
   }))
-  
+
   .pipe(rename({ basename: 'sprite' }))
   .pipe(gulp.dest(config.dest.img))
 );

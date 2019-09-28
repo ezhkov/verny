@@ -1,1 +1,143 @@
-<p>Hello from partials/_header.html</p>
+{% set mainNav = [
+  'События',
+  'О компании',
+  'Работа и развитие',
+  'Корпоративная культура',
+  'Дистанционное обучение',
+  'Сервисы',
+  'Льготы сотрудникам',
+  'Контакты',
+  'Обращения',
+  'Тусовка'
+]
+%}
+
+{% set user = [
+  {
+    key: 'День рождения',
+    value: '26 декабря 1991 г'
+  }, {
+    key: 'Телефон',
+    value: '+7 906 345 67 89'
+  }, {
+    key: 'Почта',
+    value: 'konstantinopl@pochta.org'
+  }, {
+    key: 'Инстаграмм',
+    value: '@Kostya'
+  }
+]
+%}
+
+
+<header class="site-header">
+  <div class="wrapper">
+    <div class="site-header-inner">
+      <a href="#" class="logo">
+        <img src="img/logo.svg" alt=""/>
+      </a>
+      <div class="header-burger">
+        <button class="burger-button js-burger-trigger"><i></i></button>
+        <nav class="main-nav js-burger-menu">
+          <ul class="main-nav-items">
+            <li class="main-nav-item main-nav-item--fav">
+              <a href="#" class="main-nav-link">Избранное{{mixins.icon('star')}}</a>
+            </li>
+            {% for navItem in mainNav %}
+            <li class="main-nav-item">
+              <a href="#" class="main-nav-link">
+                {{navItem}}
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </nav>
+      </div>
+      <div class="header-userinfo">
+        <button class="userinfo-trigger js-userinfo-trigger">
+          {{mixins.icon('pers')}}
+        </button>
+        <div class="userinfo-popup js-userinfo">
+          <div class="userinfo-popup-info">
+            <div class="userinfo-avatar">
+              <img srcset="img/img_avatar.png, img/img_avatar@2x.png 2x" src="img/img_avatar.png" alt="Константин Константинопольский"/>
+            </div>
+            <div class="userinfo-name">Константин Константинопольский</div>
+            <div class="userinfo-job">Инженер управления эксплуатации, Дирекция IT</div>
+            <dl class="userinfo-personal">
+              {% for userRow in user %}
+              <div class="userinfo-personal-row">
+                <dt class="userinfo-personal-key">{{userRow.key}}:</dt>
+                <dd class="userinfo-personal-value">{{userRow.value}}</dd>
+              </div>
+              {% endfor %}
+            </dl>
+          </div>
+          <div class="userinfo-popup-extra">
+            <div class="userinfo-extra-block">
+              <div class="userinfo-extra-header">Дни рождения сегодня <i class="userinfo-extra-header-icon"></i></div>
+              <div class="userinfo-extra-body">
+                <ul class="userinfo-users-list">
+                  <li class="userinfo-users-item">
+                    <img class="userinfo-users-avatar" srcset="img/img_avatar1.png, img/img_avatar1@2x.png 2x" src="img/img_avatar1.png" alt="Евгений Поверт"/>
+                    <span class="userinfo-users-name">Евгений Поверт</span>
+                  </li>
+                  <li class="userinfo-users-item">
+                    <img class="userinfo-users-avatar" srcset="img/img_avatar2.png, img/img_avatar2@2x.png 2x" src="img/img_avatar2.png" alt="Дарья Егоркина"/>
+                    <span class="userinfo-users-name">Дарья Егоркина</span>
+                  </li>
+                  <li class="userinfo-users-item">
+                    <img class="userinfo-users-avatar" srcset="img/img_avatar3.png, img/img_avatar3@2x.png 2x" src="img/img_avatar3.png" alt="Ева Ковальчук"/>
+                    <span class="userinfo-users-name">Ева Ковальчук</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="userinfo-extra-block">
+              <div class="userinfo-extra-header">Новые сотрудники</div>
+              <div class="userinfo-extra-body">
+                <ul class="userinfo-users-list">
+                  <li class="userinfo-users-item">
+                    <img class="userinfo-users-avatar" srcset="img/img_avatar1.png, img/img_avatar1@2x.png 2x" src="img/img_avatar1.png" alt="Константин Архангельский"/>
+                    <span class="userinfo-users-name">Константин Архангельский</span>
+                  </li>
+                  <li class="userinfo-users-item">
+                    <img class="userinfo-users-avatar" srcset="img/img_avatar2.png, img/img_avatar2@2x.png 2x" src="img/img_avatar2.png" alt="Дарья Егоркина"/>
+                    <span class="userinfo-users-name">Дарья Егоркина</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="userinfo-extra-block userinfo-extra-block--news">
+              <div class="userinfo-extra-header userinfo-extra-header--news">Новости</div>
+              <ul class="userinfo-news-list">
+                <li class="userinfo-news-item">
+                  <div class="userinfo-news-header">Понимать тренды производства</div>
+                  <div class="userinfo-news-text">
+                    Стимул непосредственно и четко представляет собой важность, о чем и писал А.Маслоу.
+                    <a href="#">Читать дальше</a>
+                  </div>
+                  <div class="userinfo-news-footer">
+                    <div class="userinfo-news-author">
+                      <img class="userinfo-users-avatar" src="img/img_avatar2.png" alt="Дарья Егоркина"/>
+                      <span class="userinfo-users-name">Андрей М.</span>
+                    </div>
+                    <ul class="userinfo-news-stats">
+                      <li class="userinfo-news-stats-item">
+                        {{mixins.icon('heart')}}<span class="userinfo-news-stats-count">21</span>
+                      </li>
+                      <li class="userinfo-news-stats-item">
+                        {{mixins.icon('comment')}}<span class="userinfo-news-stats-count">21</span>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button class="userinfo-close js-userinfo-close">{{mixins.icon('close')}}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
