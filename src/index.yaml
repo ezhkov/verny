@@ -2,7 +2,7 @@ ProjectTitle: verny
 
 PageList:
 - file: page-main.html
-  ready: 50
+  ready: 95
   name: Главная
 - file: page-styles.html
   ready: 50

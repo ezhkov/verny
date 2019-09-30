@@ -1,12 +1,77 @@
----
-title: Index page
----
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
 
 <main class="site-inner">
-  inner content
+  <div class="wrapper wrapper--rel">
+    <section class="main-page-primary">
+      <h1>Корпоративный<br/>портал</h1>
+      <div class="main-page-search-container">
+        <form action="" class="main-page-search">
+          <div class="mps-row">
+            <input type="text" name="q" class="main-page-search-input" placeholder="Найди то, что тебе нужно!" />
+            <button type="submit" class="main-page-search-submit">{{mixins.icon('search')}}</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="main-page-statistics">
+      <div class="statistics-total">
+        <span class="statistics-total-icon">{{mixins.icon('logo_map')}}</span>
+        <span class="statistics-total-text">751</span>
+      </div>
+      <ul class="statistics-list">
+        <li class="statistics-item">
+          <div class="statistics-item-icon">{{mixins.icon('moscow')}}</div>
+          <span class="statistics-item-count">424</span>
+          <span class="statistics-item-text">Центральный<br/>филиал</span>
+        </li>
+        <li class="statistics-item">
+          <div class="statistics-item-icon">{{mixins.icon('piter')}}</div>
+          <span class="statistics-item-count">161</span>
+          <span class="statistics-item-text">Северо-Западный<br/>филиал</span>
+        </li>
+        <li class="statistics-item">
+          <div class="statistics-item-icon">{{mixins.icon('ekb')}}</div>
+          <span class="statistics-item-count">130</span>
+          <span class="statistics-item-text">Уральский<br/>филиал</span>
+        </li>
+        <li class="statistics-item">
+          <div class="statistics-item-icon">{{mixins.icon('kazan')}}</div>
+          <span class="statistics-item-count">36</span>
+          <span class="statistics-item-text">Приволжский<br/>филиал</span>
+        </li>
+      </ul>
+    </section>
+    <section class="main-page-benefits">
+      <ul class="benefits-list">
+        <li class="benefits-list-item">
+          <img class="benefits-list-image" src="img/img_block1.jpg" srcset="img/img_block1.jpg, img/img_block1@2x.jpg 2x"/>
+          <div class="benefits-list-info">
+            <h2 class="benefits-header">Портфель<br/>директора</h2>
+            <p class="benefits-text">Все для магазинов, меморандумы, приемка, промо, ЕГАИС, ТСД и тд.</p>
+            <div class="benefits-action"><a href="#" class="button">Перейти</a></div>
+          </div>
+        </li>
+        <li class="benefits-list-item">
+          <img class="benefits-list-image" src="img/img_block2.jpg" srcset="img/img_block2.jpg, img/img_block2@2x.jpg 2x"/>
+          <div class="benefits-list-info">
+            <h2 class="benefits-header">Новому<br/>сотруднику</h2>
+            <p class="benefits-text">Компания «Верный» приветствует новых сотрудников! Здесь вы найдете свой план адаптации, узнаете о стажировке, а также о истории Компании и многое другое.</p>
+            <div class="benefits-action"><a href="#" class="button">Пройти обучение</a></div>
+          </div>
+        </li>
+        <li class="benefits-list-item">
+          <img class="benefits-list-image" src="img/img_block3.jpg" srcset="img/img_block3.jpg, img/img_block3@2x.jpg 2x"/>
+          <div class="benefits-list-info">
+            <h2 class="benefits-header">Корпоративная<br/>культура</h2>
+            <p class="benefits-text">Здесь вы найдете Корпоративные ценности, видео и фото с мероприятия, Корпоративную газету и многое другое!</p>
+            <div class="benefits-action"><a href="#" class="button">Подробнее</a></div>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </div>
 </main>
 
 {% endblock %}

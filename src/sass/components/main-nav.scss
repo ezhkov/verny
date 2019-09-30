@@ -12,13 +12,16 @@
   z-index: 0;
   opacity: 0;
   visibility: hidden;
-  transform: scale(.95);
-  transform-origin: 0 0;
+  transform: translateX(-100%);
+  //transform: scale(.95);
+  //transform-origin: 0 0;
+  //outline: 1px solid green;
   transition: opacity .3s, visibility .3s, transform .3s;
   &.is-active {
     opacity: 1;
     visibility: visible;
-    transform: scale(1);
+    //transform: scale(1);
+    transform: translateX(0);
   }
 }
 
