@@ -74,6 +74,10 @@ html {
     box-sizing: inherit;
 }
 
+::selection {
+  background-color: rgba($cRed, .4);
+}
+
 @media (prefers-reduced-motion: reduce) {
     * {
       transition: none !important;

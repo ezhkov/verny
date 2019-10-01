@@ -63,3 +63,109 @@ a.button {
   }
 
 }
+
+
+.text-common {
+  ul, ol {
+    font-size: 16px;
+    line-height: 22px;
+    li + li {
+      margin-top: 22px;
+    }
+  }
+  li > ul, li > ol {
+    margin-top: 22px;
+  }
+  ul {
+    list-style-type: none;
+    li {
+      padding-left: 28px;
+      position: relative;
+      &:before {
+        content: '';
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: $cRed;
+        position: absolute;
+        left: 0;
+        top: 8px;
+      }
+    }
+  }
+  ol {
+    list-style-type: none;
+    counter-reset: ol1;
+    li {
+      counter-increment: ol1;
+      &:before {
+        content: counter(ol1)'.';
+        margin-right: 8px;
+        color: $cRed;
+      }
+      & > ol {
+        counter-reset: ol2;
+        li {
+          counter-increment: ol2;
+          padding-left: 12px;
+          &:before {
+            content: counter(ol1)'.'counter(ol2)'.';
+            color: $cRed;
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.text-image {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  img {
+    max-width: 480px;
+    flex-shrink: 0;
+    margin-left: 20px;
+    border-radius: 10px;
+  }
+}
+
+.text-image--left {
+  flex-direction: row-reverse;
+  img {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+}
+
+.cols {
+  display: flex;
+  align-items: flex-start;
+}
+
+.cols2 {
+  .col {
+    width: 50%;
+  }
+}
+
+.cols4 {
+  .col {
+    width: 25%;
+  }
+}
+
+.col {
+  margin-right: 10px;
+  margin-left: 10px;
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+
