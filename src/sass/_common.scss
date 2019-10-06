@@ -45,26 +45,6 @@ body {
   display: block;
 }
 
-a.button {
-  display: inline-flex;
-  text-decoration: none;
-  color: #ffffff;
-  align-items: center;
-  justify-content: center;
-  padding: 19px 70px 18px;
-  font-family: "OpenSans-Bold", sans-serif;
-  font-size: 14px;
-  line-height: 19px;
-  transition: background-color .2s;
-  background-color: $cRed;
-  border-radius: 30px;
-  &:active, &:hover {
-    background-color: $cRedActive;
-  }
-
-}
-
-
 .text-common {
   ul, ol {
     font-size: 16px;
@@ -168,4 +148,52 @@ a.button {
   }
 }
 
+.figure {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  figcaption {
+    margin-top: 24px;
+    font-family: "OpenSans-Light", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: $cDarkGrey;
+  }
+  img {
+    border-radius: 5px;
+  }
+}
+
+.styled-table {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 40px;
+  th {
+    font-family: Helvetica-Light, sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    font-weight: normal;
+    padding-bottom: 24px;
+    border-bottom: 1px solid $cDarkGrey;
+    padding-right: 80px;
+    text-align: left;
+  }
+  tbody {
+    tr {
+      &:nth-child(even) {
+        td {
+          background: $cLightGrey;
+        }
+      }
+    }
+  }
+  td {
+    padding-bottom: 24px;
+    padding-top: 24px;
+    padding-right: 80px;
+  }
+}
 

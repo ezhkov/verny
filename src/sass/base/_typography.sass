@@ -49,3 +49,19 @@ p.text-lead
   line-height: 32px
   margin-top: 16px
   margin-bottom: 16px
+
+a, a.link
+  text-decoration: none
+  color: inherit
+  border-bottom: 1px solid $cMediumGrey
+  transition: color .3s, border-color .3s
+  &:hover
+    border-bottom: 0
+    color: $cRed
+    border-bottom-color: transparent
+  &[href^="#"]
+    border-bottom: 1px dotted $cMediumGrey
+    color: $cMediumGrey
+    &:hover
+      color: $cMediumGrey
+      border-bottom-color: transparent

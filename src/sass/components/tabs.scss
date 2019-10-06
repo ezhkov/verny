@@ -1,0 +1,55 @@
+.tabs {
+
+}
+
+.tabs-list {
+  display: flex;
+  border-bottom: 1px solid $cLightGrey;
+}
+
+.tabs-item {
+  + .tabs-item {
+    margin-left: 16px;
+  }
+}
+
+a.tabs-link {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  display: block;
+  font-family: "Helvetica-Light", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: $cDarkGrey;
+  transition: color .3s, border-color .3s;
+  border-bottom: 2px solid transparent;
+  &:hover {
+    color: $cBlack;
+    border-bottom: 2px solid $cSemiRed;
+  }
+}
+
+a.tabs-link--active {
+  color: $cBlack;
+  cursor: default;
+  border-bottom: 2px solid $cRed;
+  &:hover {
+    color: $cBlack;
+    border-bottom: 2px solid $cRed;
+  }
+}
+
+.tabs-content {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.tabs-content {
+  display: none;
+}
+
+.tabs-content--active {
+  display: block;
+}

@@ -1,0 +1,82 @@
+.pagination-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.pagination-item {
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+.pagination-item--prev {
+  margin-right: 16px;
+  margin-left: 0;
+}
+
+.pagination-item--next {
+  margin-left: 16px;
+  margin-right: 0;
+}
+
+a.pagination-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  transition: color .3s, border-color .3s;
+  font-size: 18px;
+  line-height: 25px;
+  color: $cDarkGrey;
+  &:hover {
+    color: $cRed;
+  }
+}
+
+a.pagination-link--current {
+  border-color: $cRed;
+  cursor: default;
+  color: $cRed;
+  &:hover {
+    border-color: $cRed;
+  }
+}
+
+a.pagination-action {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  transition: color .3s, border-color .3s, background-color .3s;
+  font-size: 9px;
+  color: $cDarkGrey;
+}
+
+a.pagination-action--inactive {
+  background-color: transparent;
+  border-color: $cMediumGrey;
+  color: $cMediumGrey;
+  cursor: default;
+  &:hover {
+    border-color: $cMediumGrey;
+  }
+}
+
+a.pagination-action--active {
+  background-color: $cRed;
+  border-color: $cRed;
+  color: #ffffff;
+  &:hover {
+    background-color: $cRedActive;
+    border-color: $cRedActive;
+    color: #ffffff;
+  }
+}

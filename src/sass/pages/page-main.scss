@@ -29,7 +29,7 @@
   position: relative;
 }
 
-.main-page-search-input {
+input.main-page-search-input {
   display: block;
   width: 100%;
   font-size: 18px;
@@ -38,6 +38,7 @@
   padding: 16px 30px;
   background: #FFFFFF;
   border-radius: 30px;
+  border: 0;
   box-shadow: 0 4px 20px rgba(153, 153, 153, 0.13);
   &::-webkit-input-placeholder {color: $cSemiBlack;}
   &::-moz-placeholder {color: $cSemiBlack;}
