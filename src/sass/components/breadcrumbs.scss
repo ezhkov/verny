@@ -1,0 +1,41 @@
+.breadcrumbs {
+  margin-top: 8px;
+  margin-bottom: 40px;
+}
+
+.breadcrumbs-list {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs-item {
+  position: relative;
+  +.breadcrumbs-item {
+    margin-left: 32px;
+    &:before {
+      content: '';
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background: $cRed;
+      position: absolute;
+      top: 50%;
+      left: -16px;
+    }
+  }
+}
+
+a.breadcrumbs-link {
+  font-size: 12px;
+  line-height: 24px;
+  display: inline-block;
+  font-family: OpenSans-SemiBold, sans-serif;
+  color: $cBlack;
+  border-bottom: 0;
+  &[href], &.is-current {
+    font-family: OpenSans-Regular, sans-serif;
+    &:hover {
+      color: $cRed;
+    }
+  }
+}
