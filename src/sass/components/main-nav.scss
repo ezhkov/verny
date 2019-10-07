@@ -39,7 +39,7 @@
 .main-nav-item--fav {
   border-bottom: 1px solid #e5e5e5;
   padding-bottom: 24px;
-  .main-nav-link {
+  a.main-nav-link {
     font-family: "OpenSans-SemiBold", sans-serif;
     display: inline-flex;
     align-items: center;
@@ -50,11 +50,13 @@
   }
 }
 
-.main-nav-link {
+a.main-nav-link {
   font-size: 16px;
   line-height: 22px;
   color: $cBlack;
   text-decoration: none;
+  border-bottom: 0;
+
   &:hover {
     color: $cRed;
     text-decoration: underline;

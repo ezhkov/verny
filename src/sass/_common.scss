@@ -197,3 +197,23 @@ body {
   }
 }
 
+.header-with-info {
+  display: flex;
+  align-items: center;
+}
+
+.header-info {
+  font-size: 14px;
+  font-family: OpenSans-Regular, sans-serif;
+  line-height: 19px;
+  margin-left: 24px;
+  display: flex;
+  align-items: center;
+  color: $cDarkGrey;
+}
+
+.header-icon {
+  font-size: 20px;
+  color: $cRed;
+  margin-right: 16px;
+}
