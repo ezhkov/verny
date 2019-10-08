@@ -8,5 +8,8 @@ PageList:
   ready: 100
   name: Стили
 - file: page-vacancies.html
-  ready: 50
+  ready: 100
   name: Вакансии
+- file: page-vacancy.html
+  ready: 100
+  name: Вакансия детальная
