@@ -1,3 +1,80 @@
 .vacancies-filter {
   margin-bottom: 56px;
 }
+
+.vac-search-result {
+  padding-bottom: 48px;
+}
+
+.vacancies-list {
+
+}
+
+.vacancies-item {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-top: 1px solid rgba($cMediumGrey, .5);
+}
+
+.vac-item__header {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.vac-item__summary {
+  display: flex;
+  flex-direction: column;
+}
+
+.vac-item__price {
+  font-family: Helvetica-Light, sans-serif;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+a.vac-item__name {
+  font-family: Helvetica-Light, sans-serif;
+  font-size: 24px;
+  line-height: 29px;
+  color: $cRed;
+  border-bottom: 0;
+  transition: color .3s;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.vac-item__city {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 19px;
+  color: $cMediumGrey;
+}
+
+.vac-item__body {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.vac-search-loadmore {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+
+.vacancies-similar {
+  margin-top: 120px;
+}
+
+.vacancies-similar-header {
+  font-family: Helvetica-Thin, sans-serif;
+  font-size: 36px;
+  line-height: 44px;
+  color: #000000;
+  margin-bottom: 40px;
+}
