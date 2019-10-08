@@ -216,4 +216,21 @@ body {
   font-size: 20px;
   color: $cRed;
   margin-right: 16px;
+  path {
+    stroke: $cMediumGrey;
+    fill: transparent;
+    transition: stroke .3s, fill .3s;
+  }
+  &:hover {
+    cursor: pointer;
+    path {
+      stroke: $cRed;
+    }
+  }
+  &.is-active {
+    path {
+      stroke: $cRed;
+      fill: $cRed;
+    }
+  }
 }

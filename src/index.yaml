@@ -13,3 +13,7 @@ PageList:
 - file: page-vacancy.html
   ready: 100
   name: Вакансия детальная
+- file: page-team.html
+  ready: 100
+  name: Первые лица
+
