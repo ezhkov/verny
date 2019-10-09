@@ -1,0 +1,85 @@
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<main class="site-inner">
+  <div class="wrapper wrapper--rel">
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs-list">
+        <li class="breadcrumbs-item">
+          <a href="#" class="breadcrumbs-link">Обучение</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link">Новому сотруднику</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-content">
+      <h1 class="header-with-info">Новому сотруднику
+        <span class="header-info">
+          <i class="header-icon">
+            <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.5516 2.77872L12 1.87022L12.4484 2.77872L15.271 8.49791L21.5825 9.41503L22.585 9.56071L21.8596 10.2679L17.2925 14.7196L18.3707 21.0056L18.5419 22.0042L17.6452 21.5327L12 18.5649L6.35482 21.5327L5.45808 22.0042L5.62934 21.0056L6.70748 14.7196L2.14043 10.2679L1.41496 9.56071L2.41754 9.41503L8.72904 8.49791L11.5516 2.77872Z" stroke-linecap="round"/>
+            </svg>
+          </i>
+        </span>
+      </h1>
+      <p class="text-lead">Добро пожаловать в команду! Вас ждёт много интересных задач и приятных открытий. Чтобы вы скорее адаптировались, мы предлагаем двигаться по следующему плану:</p>
+      <ul class="new-steps">
+        <li class="new-steps-item">
+          <div class="new-steps-image">
+            <img src="img/img_new1.jpg" srcset="img/img_new1.jpg, img/img_new1@2x.jpg 2x" alt=""/>
+          </div>
+          <div class="new-steps-content">
+            <span class="new-steps-step">Шаг первый</span>
+            <h2 class="new-steps-header">Знакомство с компанией</h2>
+            <div class="new-steps-descr">
+              <p>Вот ваш <a href="/">план адаптации</a>, если какие-то термины вам не будут понятны, загляните в <a href="/">Глоссарий</a>, а также не забудьте познакомиться с <a href="/">Корпоративной культурой</a>. Рекомендуем ознакомиться со <a href="/">структурой компании</a> и её <a href="/">первыми лицами</a>. В компании действуют <a href="/">льготы для сотрудников</a>. Обязательно посетите разделы о <a href="/">топливных картах</a> и <a href="/">ДМС</a>. </p>
+            </div>
+          </div>
+        </li>
+        <li class="new-steps-item">
+          <div class="new-steps-image">
+            <img src="img/img_new2.jpg" srcset="img/img_new2.jpg, img/img_new2@2x.jpg 2x" alt=""/>
+          </div>
+          <div class="new-steps-content">
+            <span class="new-steps-step">Шаг второй</span>
+            <h2 class="new-steps-header">Стажировка</h2>
+            <div class="new-steps-descr">
+              <p>Этот этап обязателен для каждого сотрудника. На один день вы станете сотрудником одного из магазинов сети «Верный» и познакомитесь со всеми нюансами этой работы изнутри. По итогам стажировки директор магазина направляет рекомендацию в управление по эффективности персонала.</p>
+            </div>
+          </div>
+        </li>
+        <li class="new-steps-item">
+          <div class="new-steps-image">
+            <img src="img/img_new3.jpg" srcset="img/img_new3.jpg, img/img_new3@2x.jpg 2x" alt=""/>
+          </div>
+          <div class="new-steps-content">
+            <span class="new-steps-step">Шаг третий</span>
+            <h2 class="new-steps-header">Цели на период адаптации</h2>
+            <div class="new-steps-descr">
+              <p>Компания заботится о новых сотрудниках. Всем новичкам выдается план адаптации, который поможет быстрее включиться в работу. В плане прописаны цели на период адаптации нового сотрудника — ближайшие 3 месяца. Пройдите вводный курс обучения, после окончания адаптации вы должны пройти аттестацию, дату назначит ваш руководитель.</p>
+            </div>
+          </div>
+        </li>
+        <li class="new-steps-item">
+          <div class="new-steps-image">
+            <img src="img/img_new4.jpg" srcset="img/img_new4.jpg, img/img_new4@2x.jpg 2x" alt=""/>
+          </div>
+          <div class="new-steps-content">
+            <span class="new-steps-step">Шаг четвертый</span>
+            <h2 class="new-steps-header">Вы готовы к работе</h2>
+            <div class="new-steps-descr">
+              <p>Рабочее место уже готово, у вас есть рабочий телефон, компьютер и почта. По любым техническим вопросам вы можете обратиться в тех.поддержку.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="info-bar">
+        На любые вопросы, возникающие в процессе работы, <a class="info-bar-link" href="mailto:ruk@verny.ru">ответит</a> ваш руководитель
+      </div>
+    </div> <!-- .page-content -->
+  </div> <!-- .wrapper -->
+</main>
+
+{% endblock %}

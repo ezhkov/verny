@@ -16,4 +16,7 @@ PageList:
 - file: page-team.html
   ready: 100
   name: Первые лица
+- file: page-new.html
+  ready: 10
+  name: Новому сотруднику
 
