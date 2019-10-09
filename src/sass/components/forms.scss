@@ -235,14 +235,12 @@ textarea {
   }
 }
 
-.button--icon {
+.button--wired {
   background-color: transparent;
   box-shadow: inset 0 0 0 1px $cMediumGrey;
   color: $cMediumGrey;
-  padding-left: 24px;
-  padding-right: 24px;
   transition: color .3s, box-shadow .3s;
-  &:hover {
+  &:hover, &.is-active {
     box-shadow: inset 0 0 0 1px $cRed;
     color: $cRed;
     background-color: transparent;
@@ -261,10 +259,15 @@ textarea {
   }
 }
 
+.button--icon {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
 .button__icon {
   font-size: 18px;
   margin-right: 14px;
-  color: $cMediumGrey;
+  color: inherit;
   transition: color .3s;
 }
 

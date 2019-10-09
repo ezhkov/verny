@@ -17,6 +17,15 @@ PageList:
   ready: 100
   name: Первые лица
 - file: page-new.html
-  ready: 10
+  ready: 100
   name: Новому сотруднику
+- file: page-ads.html
+  ready: 100
+  name: Объявления
+- file: page-ads-group.html
+  ready: 100
+  name: Объявления категория
+- file: page-ads-item.html
+  ready: 100
+  name: Объявления детальная
 

@@ -26,8 +26,8 @@ body {
 
 .wrapper {
 	width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 	margin-left: auto;
 	margin-right: auto;
 	box-sizing: border-box;
@@ -200,6 +200,18 @@ body {
 .header-with-info {
   display: flex;
   align-items: center;
+  .button {
+    margin-left: auto;
+  }
+}
+
+.header-bordered {
+  display: flex;
+  padding-bottom: 24px;
+  border-bottom: 1px solid $cLightGrey;
+  .header-right {
+    margin-left: auto;
+  }
 }
 
 .header-info {
@@ -234,3 +246,11 @@ body {
     }
   }
 }
+
+.loadmore-action {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+

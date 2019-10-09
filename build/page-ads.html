@@ -1,0 +1,469 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Template</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fff" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" media="all" href="css/app.css" />
+  </head>
+  <body>
+    <!-- BEGIN content -->
+    <div class="site-wrapper">
+      <header class="site-header">
+        <div class="site-header-inner">
+          <a href="#" class="logo">
+            <img src="img/logo.svg" alt="" />
+          </a>
+          <div class="header-burger">
+            <button class="burger-button js-burger-trigger"><i></i></button>
+            <nav class="main-nav js-burger-menu">
+              <ul class="main-nav-items">
+                <li class="main-nav-item main-nav-item--fav">
+                  <a href="#" class="main-nav-link">Избранное <svg class="icon icon-star">
+                      <use xlink:href="img/sprite.svg#icon-star"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="main-nav-item">
+                  <a href="#" class="main-nav-link"> События </a>
+                </li>
+                <li class="main-nav-item">
+                  <a href="#" class="main-nav-link"> О компании </a>
+                </li>
+                <li class="main-nav-item">
+                  <a href="#" class="main-nav-link"> Работа и развитие </a>
+                </li>
+                <li class="main-nav-item">
+                  <a href="#" class="main-nav-link"> Корпоративная культура </a>
+                </li>
+                <li class="main-nav-item">
+                  <a href="#" class="main-nav-link"> Дистанционное обучение </a>
+                </li>
+                <li class="main-nav-item">
+                  <a href="#" class="main-nav-link"> Сервисы </a>
+                </li>
+                <li class="main-nav-item">
+                  <a href="#" class="main-nav-link"> Льготы сотрудникам </a>
+                </li>
+                <li class="main-nav-item">
+                  <a href="#" class="main-nav-link"> Контакты </a>
+                </li>
+                <li class="main-nav-item">
+                  <a href="#" class="main-nav-link"> Обращения </a>
+                </li>
+                <li class="main-nav-item">
+                  <a href="#" class="main-nav-link"> Тусовка </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-userinfo">
+            <button class="userinfo-trigger js-userinfo-trigger">
+              <svg class="icon icon-pers">
+                <use xlink:href="img/sprite.svg#icon-pers"></use>
+              </svg>
+            </button>
+            <div class="userinfo-popup js-userinfo">
+              <div class="userinfo-popup-info">
+                <div class="userinfo-avatar">
+                  <img srcset="img/img_avatar.png, img/img_avatar@2x.png 2x" src="img/img_avatar.png" alt="Константин Константинопольский" />
+                </div>
+                <div class="userinfo-name">Константин Константинопольский</div>
+                <div class="userinfo-job">Инженер управления эксплуатации, Дирекция IT</div>
+                <dl class="userinfo-personal">
+                  <div class="userinfo-personal-row">
+                    <dt class="userinfo-personal-key">День рождения:</dt>
+                    <dd class="userinfo-personal-value">26 декабря 1991 г</dd>
+                  </div>
+                  <div class="userinfo-personal-row">
+                    <dt class="userinfo-personal-key">Телефон:</dt>
+                    <dd class="userinfo-personal-value">+7 906 345 67 89</dd>
+                  </div>
+                  <div class="userinfo-personal-row">
+                    <dt class="userinfo-personal-key">Почта:</dt>
+                    <dd class="userinfo-personal-value">konstantinopl@pochta.org</dd>
+                  </div>
+                  <div class="userinfo-personal-row">
+                    <dt class="userinfo-personal-key">Инстаграмм:</dt>
+                    <dd class="userinfo-personal-value">@Kostya</dd>
+                  </div>
+                </dl>
+              </div>
+              <div class="userinfo-popup-extra">
+                <div class="userinfo-extra-block">
+                  <div class="userinfo-extra-header">Дни рождения сегодня <i class="userinfo-extra-header-icon"></i></div>
+                  <div class="userinfo-extra-body">
+                    <ul class="userinfo-users-list">
+                      <li class="userinfo-users-item">
+                        <img class="userinfo-users-avatar" srcset="img/img_avatar1.png, img/img_avatar1@2x.png 2x" src="img/img_avatar1.png" alt="Евгений Поверт" />
+                        <span class="userinfo-users-name">Евгений Поверт</span>
+                      </li>
+                      <li class="userinfo-users-item">
+                        <img class="userinfo-users-avatar" srcset="img/img_avatar2.png, img/img_avatar2@2x.png 2x" src="img/img_avatar2.png" alt="Дарья Егоркина" />
+                        <span class="userinfo-users-name">Дарья Егоркина</span>
+                      </li>
+                      <li class="userinfo-users-item">
+                        <img class="userinfo-users-avatar" srcset="img/img_avatar3.png, img/img_avatar3@2x.png 2x" src="img/img_avatar3.png" alt="Ева Ковальчук" />
+                        <span class="userinfo-users-name">Ева Ковальчук</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="userinfo-extra-block">
+                  <div class="userinfo-extra-header">Новые сотрудники</div>
+                  <div class="userinfo-extra-body">
+                    <ul class="userinfo-users-list">
+                      <li class="userinfo-users-item">
+                        <img class="userinfo-users-avatar" srcset="img/img_avatar1.png, img/img_avatar1@2x.png 2x" src="img/img_avatar1.png" alt="Константин Архангельский" />
+                        <span class="userinfo-users-name">Константин Архангельский</span>
+                      </li>
+                      <li class="userinfo-users-item">
+                        <img class="userinfo-users-avatar" srcset="img/img_avatar2.png, img/img_avatar2@2x.png 2x" src="img/img_avatar2.png" alt="Дарья Егоркина" />
+                        <span class="userinfo-users-name">Дарья Егоркина</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="userinfo-extra-block userinfo-extra-block--news">
+                  <div class="userinfo-extra-header userinfo-extra-header--news">Новости</div>
+                  <ul class="userinfo-news-list">
+                    <li class="userinfo-news-item">
+                      <div class="userinfo-news-header">Понимать тренды производства</div>
+                      <div class="userinfo-news-text"> Стимул непосредственно и четко представляет собой важность, о чем и писал А.Маслоу. <a href="#">Читать дальше</a>
+                      </div>
+                      <div class="userinfo-news-footer">
+                        <div class="userinfo-news-author">
+                          <img class="userinfo-users-avatar" src="img/img_avatar2.png" alt="Дарья Егоркина" />
+                          <span class="userinfo-users-name">Андрей М.</span>
+                        </div>
+                        <ul class="userinfo-news-stats">
+                          <li class="userinfo-news-stats-item">
+                            <svg class="icon icon-heart">
+                              <use xlink:href="img/sprite.svg#icon-heart"></use>
+                            </svg>
+                            <span class="userinfo-news-stats-count">21</span>
+                          </li>
+                          <li class="userinfo-news-stats-item">
+                            <svg class="icon icon-comment">
+                              <use xlink:href="img/sprite.svg#icon-comment"></use>
+                            </svg>
+                            <span class="userinfo-news-stats-count">21</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <button class="userinfo-close js-userinfo-close">
+                <svg class="icon icon-close">
+                  <use xlink:href="img/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="site-inner">
+        <div class="wrapper wrapper--rel">
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs-list">
+              <li class="breadcrumbs-item">
+                <a href="#" class="breadcrumbs-link">Тусовка</a>
+              </li>
+              <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link">Объявления</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-content">
+            <h1 class="header-with-info">Объявления <span class="header-info">
+                <i class="header-icon">
+                  <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.5516 2.77872L12 1.87022L12.4484 2.77872L15.271 8.49791L21.5825 9.41503L22.585 9.56071L21.8596 10.2679L17.2925 14.7196L18.3707 21.0056L18.5419 22.0042L17.6452 21.5327L12 18.5649L6.35482 21.5327L5.45808 22.0042L5.62934 21.0056L6.70748 14.7196L2.14043 10.2679L1.41496 9.56071L2.41754 9.41503L8.72904 8.49791L11.5516 2.77872Z" stroke-linecap="round" />
+                  </svg>
+                </i>
+              </span>
+              <button class="button button--icon"><span class="button__icon">
+                  <svg class="icon icon-add">
+                    <use xlink:href="img/sprite.svg#icon-add"></use>
+                  </svg>
+                </span>Создать объявление</button>
+            </h1>
+            <div class="ads-categories">
+              <h3>Категории</h3>
+              <ul class="ads-categories-items">
+                <li class="ads-categories-item">
+                  <button class="button button--wired button--icon"><span class="button__icon">
+                      <svg class="icon icon-cat1">
+                        <use xlink:href="img/sprite.svg#icon-cat1"></use>
+                      </svg>
+                    </span>Личные вещи</button>
+                </li>
+                <li class="ads-categories-item">
+                  <button class="button button--wired button--icon"><span class="button__icon">
+                      <svg class="icon icon-cat2">
+                        <use xlink:href="img/sprite.svg#icon-cat2"></use>
+                      </svg>
+                    </span>Техника</button>
+                </li>
+                <li class="ads-categories-item">
+                  <button class="button button--wired button--icon"><span class="button__icon">
+                      <svg class="icon icon-cat3">
+                        <use xlink:href="img/sprite.svg#icon-cat3"></use>
+                      </svg>
+                    </span>Недвижимость</button>
+                </li>
+                <li class="ads-categories-item">
+                  <button class="button button--wired button--icon"><span class="button__icon">
+                      <svg class="icon icon-cat4">
+                        <use xlink:href="img/sprite.svg#icon-cat4"></use>
+                      </svg>
+                    </span>Транспорт</button>
+                </li>
+                <li class="ads-categories-item">
+                  <button class="button button--wired button--icon"><span class="button__icon">
+                      <svg class="icon icon-cat5">
+                        <use xlink:href="img/sprite.svg#icon-cat5"></use>
+                      </svg>
+                    </span>Животные и растения</button>
+                </li>
+                <li class="ads-categories-item">
+                  <button class="button button--wired button--icon"><span class="button__icon">
+                      <svg class="icon icon-cat6">
+                        <use xlink:href="img/sprite.svg#icon-cat6"></use>
+                      </svg>
+                    </span>Услуги</button>
+                </li>
+                <li class="ads-categories-item">
+                  <button class="button button--wired button--icon"><span class="button__icon">
+                      <svg class="icon icon-cat7">
+                        <use xlink:href="img/sprite.svg#icon-cat7"></use>
+                      </svg>
+                    </span>Другое</button>
+                </li>
+                <li class="ads-categories-item">
+                  <button class="button button--wired button--icon is-active"><span class="button__icon">
+                      <svg class="icon icon-cat8">
+                        <use xlink:href="img/sprite.svg#icon-cat8"></use>
+                      </svg>
+                    </span>Отдам даром</button>
+                </li>
+              </ul>
+            </div>
+            <div class="ads-new">
+              <h3>Новые объявления</h3>
+              <ul class="cards-list">
+                <li class="cards-item">
+                  <article class="card">
+                    <div class="card-main">
+                      <div class="card-image">
+                        <img src="img/img_cat1.jpg" srcset="img/img_cat1.jpg, img/img_cat1@2x.jpg 2x" alt="" />
+                      </div>
+                      <div class="card-content">
+                        <span class="card-category"><a href="page-ads.html">Техника</a></span>
+                        <h4 class="card-header"><a href="page-ads-item.html">Продам Playstation 1 Fat scph-1001 Аудиофильская</a></h4>
+                        <div class="card-descr">Стимул непосредственно представляет собой импульс, о чем и писал А.Маслоу в своей работе "Мотивация и личность".</div>
+                      </div>
+                    </div>
+                    <footer class="card-footer">
+                      <span class="card-price">138 000 ₽</span>
+                      <div class="card-meta">
+                        <a href="page-ads-group.html" class="card-city">г. Москва</a>
+                        <time datetime="2019-10-09" class="card-date">Сегодня</time>
+                      </div>
+                    </footer>
+                  </article>
+                </li>
+                <li class="cards-item">
+                  <article class="card">
+                    <div class="card-main">
+                      <div class="card-image">
+                        <img src="img/img_cat2.jpg" srcset="img/img_cat2.jpg, img/img_cat2@2x.jpg 2x" alt="" />
+                      </div>
+                      <div class="card-content">
+                        <span class="card-category"><a href="page-ads.html">Личные вещи</a></span>
+                        <h4 class="card-header"><a href="page-ads-item.html">Шапка-ушанка меховая</a></h4>
+                        <div class="card-descr">Стимул непосредственно представляет собой импульс, о чем и писал А.Маслоу в своей работе "Мотивация и личность".</div>
+                      </div>
+                    </div>
+                    <footer class="card-footer">
+                      <span class="card-price">1 850 ₽</span>
+                      <div class="card-meta">
+                        <a href="page-ads-group.html" class="card-city">г. Москва</a>
+                        <time datetime="2019-10-09" class="card-date">Сегодня</time>
+                      </div>
+                    </footer>
+                  </article>
+                </li>
+                <li class="cards-item">
+                  <article class="card">
+                    <div class="card-main">
+                      <div class="card-image">
+                        <img src="img/img_cat3.jpg" srcset="img/img_cat3.jpg, img/img_cat3@2x.jpg 2x" alt="" />
+                      </div>
+                      <div class="card-content">
+                        <span class="card-category"><a href="page-ads.html">Транспорт</a></span>
+                        <h4 class="card-header"><a href="page-ads-item.html">Lada Kalina 2010 г.</a></h4>
+                        <div class="card-descr">Стимул непосредственно представляет собой импульс, о чем и писал А.Маслоу в своей работе "Мотивация и личность".</div>
+                      </div>
+                    </div>
+                    <footer class="card-footer">
+                      <span class="card-price">138 000 ₽</span>
+                      <div class="card-meta">
+                        <a href="page-ads-group.html" class="card-city">г. Владивосток</a>
+                        <time datetime="2019-10-09" class="card-date">Сегодня</time>
+                      </div>
+                    </footer>
+                  </article>
+                </li>
+                <li class="cards-item">
+                  <article class="card">
+                    <div class="card-main">
+                      <div class="card-image">
+                        <img src="img/img_cat4.jpg" srcset="img/img_cat4.jpg, img/img_cat4@2x.jpg 2x" alt="" />
+                      </div>
+                      <div class="card-content">
+                        <span class="card-category"><a href="page-ads.html">Личные вещи</a></span>
+                        <h4 class="card-header"><a href="page-ads-item.html">Куртка из искусственной кожи</a></h4>
+                        <div class="card-descr">Действие, как бы это ни казалось парадоксальным, потенциально. Восприятие выбирает эгоцентризм. Рефлексия аннигилирует кризис.</div>
+                      </div>
+                    </div>
+                    <footer class="card-footer">
+                      <span class="card-price">2 000 ₽</span>
+                      <div class="card-meta">
+                        <a href="page-ads-group.html" class="card-city">г. Новосибирск</a>
+                        <time datetime="2019-10-09" class="card-date">Сегодня</time>
+                      </div>
+                    </footer>
+                  </article>
+                </li>
+                <li class="cards-item">
+                  <article class="card">
+                    <div class="card-main">
+                      <div class="card-image">
+                        <img src="img/img_cat5.jpg" srcset="img/img_cat5.jpg, img/img_cat5@2x.jpg 2x" alt="" />
+                      </div>
+                      <div class="card-content">
+                        <span class="card-category"><a href="page-ads.html">Недвижимость</a></span>
+                        <h4 class="card-header"><a href="page-ads-item.html">2-к квартира, 54 м², 5/9 эт.</a></h4>
+                        <div class="card-descr">После того как тема сформулирована, бихевиоризм индивидуально иллюстрирует когнитивный.</div>
+                      </div>
+                    </div>
+                    <footer class="card-footer">
+                      <span class="card-price">6 000 000 ₽</span>
+                      <div class="card-meta">
+                        <a href="page-ads-group.html" class="card-city">г. Москва</a>
+                        <time datetime="2019-10-09" class="card-date">Сегодня</time>
+                      </div>
+                    </footer>
+                  </article>
+                </li>
+                <li class="cards-item">
+                  <article class="card">
+                    <div class="card-main">
+                      <div class="card-image">
+                        <img src="img/img_cat6.jpg" srcset="img/img_cat6.jpg, img/img_cat6@2x.jpg 2x" alt="" />
+                      </div>
+                      <div class="card-content">
+                        <span class="card-category"><a href="page-ads.html">Транспорт</a></span>
+                        <h4 class="card-header"><a href="page-ads-item.html">Крыло переднее правое Nissan Juke</a></h4>
+                        <div class="card-descr">Стимул непосредственно представляет собой импульс, о чем и писал А.Маслоу в своей работе "Мотивация и личность".</div>
+                      </div>
+                    </div>
+                    <footer class="card-footer">
+                      <span class="card-price">18 800 ₽</span>
+                      <div class="card-meta">
+                        <a href="page-ads-group.html" class="card-city">г. Москва</a>
+                        <time datetime="2019-10-09" class="card-date">Сегодня</time>
+                      </div>
+                    </footer>
+                  </article>
+                </li>
+              </ul>
+              <div class="loadmore-action">
+                <button class="button button--wired button--icon"><span class="button__icon">
+                    <svg class="icon icon-refresh">
+                      <use xlink:href="img/sprite.svg#icon-refresh"></use>
+                    </svg>
+                  </span>Показать больше</button>
+              </div>
+            </div>
+          </div> <!-- .page-content -->
+        </div> <!-- .wrapper -->
+      </main>
+      <footer class="site-footer">
+        <div class="site-footer-container">
+          <div class="site-footer-inner">
+            <nav class="site-footer-nav">
+              <ul class="footer-nav-list">
+                <li class="footer-nav-item"><a href="#" class="footer-nav-link footer-nav-link--primary">Компания</a></li>
+                <li class="footer-nav-item"><a href="#" class="footer-nav-link">Структура компании</a></li>
+                <li class="footer-nav-item"><a href="#" class="footer-nav-link">Первые лица</a></li>
+                <li class="footer-nav-item"><a href="#" class="footer-nav-link">Корпоративная культура</a></li>
+                <li class="footer-nav-item"><a href="#" class="footer-nav-link">Газета</a></li>
+                <li class="footer-nav-item">
+                  <ul class="footer-nav-sublist">
+                    <li class="footer-nav-item footer-nav-item--primary"><a href="#" class="footer-nav-link footer-nav-link--primary">Вакансии:</a></li>
+                    <li class="footer-nav-item"><a href="#" class="footer-nav-link">В магазине</a></li>
+                    <li class="footer-nav-item"><a href="#" class="footer-nav-link">В офисе</a></li>
+                  </ul>
+                  <ul class="footer-nav-sublist">
+                    <li class="footer-nav-item footer-nav-item--primary"><a href="#" class="footer-nav-link footer-nav-link--primary">Контакты:</a></li>
+                    <li class="footer-nav-item"><a href="#" class="footer-nav-link">Сотрудники</a></li>
+                    <li class="footer-nav-item"><a href="#" class="footer-nav-link">Магазины</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="footer-nav-list">
+                <li class="footer-nav-item"><a href="#" class="footer-nav-link footer-nav-link--primary">Сервисы</a></li>
+                <li class="footer-nav-item"><a href="#" class="footer-nav-link">Заявки</a></li>
+                <li class="footer-nav-item"><a href="#" class="footer-nav-link">Заявление на отпуск</a></li>
+                <li class="footer-nav-item"><a href="#" class="footer-nav-link">Заказ визиток</a></li>
+                <li class="footer-nav-item"><a href="#" class="footer-nav-link">Справки</a></li>
+              </ul>
+              <ul class="footer-nav-list">
+                <li class="footer-nav-item"><a href="#" class="footer-nav-link footer-nav-link--primary">Льготы</a></li>
+                <li class="footer-nav-item"><a href="#" class="footer-nav-link">Скидки</a></li>
+                <li class="footer-nav-item"><a href="#" class="footer-nav-link">Страхование</a></li>
+                <li class="footer-nav-item"><a href="#" class="footer-nav-link">Топливо</a></li>
+                <li class="footer-nav-item"><a href="#" class="footer-nav-link">Материальная помощь</a></li>
+              </ul>
+              <ul class="footer-nav-list">
+                <li class="footer-nav-item"><a href="#" class="footer-nav-link footer-nav-link--primary">Обучение</a></li>
+                <li class="footer-nav-item"><a href="#" class="footer-nav-link">Новому сотруднику</a></li>
+                <li class="footer-nav-item"><a href="#" class="footer-nav-link">Адаптация и аттестация</a></li>
+                <li class="footer-nav-item"><a href="#" class="footer-nav-link">Литература</a></li>
+                <li class="footer-nav-item"><a href="#" class="footer-nav-link">Глоссарий</a></li>
+                <li class="footer-nav-item"><a href="#" class="footer-nav-link">Вопросы</a></li>
+              </ul>
+              <ul class="footer-nav-list">
+                <li class="footer-nav-item"><a href="#" class="footer-nav-link footer-nav-link--primary">Тусовка</a></li>
+                <li class="footer-nav-item"><a href="#" class="footer-nav-link">Голосование и опросы</a></li>
+                <li class="footer-nav-item"><a href="#" class="footer-nav-link">Конкурсы</a></li>
+                <li class="footer-nav-item"><a href="#" class="footer-nav-link">Объявления</a></li>
+                <li class="footer-nav-item"><a href="#" class="footer-nav-link">Галерея</a></li>
+              </ul>
+            </nav>
+            <div class="site-footer-copyright">
+              <span class="copyright">© Верный 2019. Все права защищены.</span>
+              <span class="developer">Разработка сайта — <a href="http://itech-group.ru/" target="_blank">ITECH.group</a></span>
+            </div>
+            <a href="#" class="site-footer-logo">
+              <svg class="icon icon-footer_logo">
+                <use xlink:href="img/sprite.svg#icon-footer_logo"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- END scripts -->
+  </body>
+</html>
