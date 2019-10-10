@@ -1,0 +1,285 @@
+{% set title = "Опросы" %}
+{% set masonry = true %}
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<main class="site-inner">
+  <div class="wrapper wrapper--rel">
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs-list">
+        <li class="breadcrumbs-item">
+          <a href="#" class="breadcrumbs-link">Главная</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a href="#" class="breadcrumbs-link">О компании</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link">Структура компании</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-content">
+      <h1 class="header-with-info">Объявления
+        <span class="header-info">
+          <i class="header-icon">
+            <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.5516 2.77872L12 1.87022L12.4484 2.77872L15.271 8.49791L21.5825 9.41503L22.585 9.56071L21.8596 10.2679L17.2925 14.7196L18.3707 21.0056L18.5419 22.0042L17.6452 21.5327L12 18.5649L6.35482 21.5327L5.45808 22.0042L5.62934 21.0056L6.70748 14.7196L2.14043 10.2679L1.41496 9.56071L2.41754 9.41503L8.72904 8.49791L11.5516 2.77872Z" stroke-linecap="round"/>
+            </svg>
+          </i>
+        </span>
+        <a href="#" class="header-link">Архив</a>
+      </h1>
+      <div class="votes">
+        <ul class="votes-list js-masonry">
+          <li class="votes-item">
+            <div class="votes-card">
+              <div class="votes-type">Голосования</div>
+              <div class="votes-header">Когда вы покупаете клубную карту?</div>
+              <form action="" class="votes-form">
+                <fieldset class="form__row form__row--checkbox" disabled>
+                  <div class="form__checkbox">
+                    <input type="radio" name="vote1" id="vote1_1"/>
+                    <label for="vote1_1">Когда заканчивается действующая карта</label>
+                  </div>
+                </fieldset>
+                <fieldset class="form__row form__row--checkbox" disabled>
+                  <div class="form__checkbox">
+                    <input type="radio" name="vote1" id="vote1_2" checked/>
+                    <label for="vote1_2">Когда вижу выгодное акционное предложение</label>
+                  </div>
+                </fieldset>
+              </form>
+              <div class="votes-total">Проголосовали 24 человека</div>
+              <div class="votes-author">
+                <div class="votes-avatar"><img src="img/img_avatar1.png" srcset="img/img_avatar1.png, img/img_avatar1@2x.png 2x" alt=""/></div>
+                <div class="votes-author-name">Артём С.</div>
+              </div>
+            </div>
+          </li>
+
+          <li class="votes-item">
+            <div class="votes-card">
+              <div class="votes-type">Голосования</div>
+              <div class="votes-header">К какому агрегатному состоянию вы относите желе?</div>
+              <form action="" class="votes-form">
+                <fieldset class="form__row form__row--checkbox" disabled>
+                  <div class="form__checkbox">
+                    <input type="radio" name="vote1" id="vote2_1"/>
+                    <label for="vote2_1">К жидкому</label>
+                  </div>
+                </fieldset>
+                <fieldset class="form__row form__row--checkbox" disabled>
+                  <div class="form__checkbox">
+                    <input type="radio" name="vote1" id="vote2_2"/>
+                    <label for="vote2_2">К твердому</label>
+                  </div>
+                </fieldset>
+                <fieldset class="form__row form__row--checkbox" disabled>
+                  <div class="form__checkbox">
+                    <input type="radio" name="vote1" id="vote2_3" checked/>
+                    <label for="vote2_3">К газообразному</label>
+                  </div>
+                </fieldset>
+                <fieldset class="form__row form__row--checkbox" disabled>
+                  <div class="form__checkbox">
+                    <input type="radio" name="vote1" id="vote2_4"/>
+                    <label for="vote2_4">К плазме</label>
+                  </div>
+                </fieldset>
+              </form>
+              <div class="votes-total">Проголосовали 706 человек</div>
+              <div class="votes-author">
+                <div class="votes-avatar"><img src="img/img_avatar2.png" srcset="img/img_avatar2.png, img/img_avatar2@2x.png 2x" alt=""/></div>
+                <div class="votes-author-name">Мария Ж.</div>
+              </div>
+            </div>
+          </li>
+
+          <li class="votes-item">
+            <div class="votes-card">
+              <div class="votes-type">Голосования</div>
+              <div class="votes-header">Какой обучающий курс вы ждёте больше всего?</div>
+              <form action="" class="votes-form">
+                <fieldset class="form__row form__row--checkbox">
+                  <div class="form__checkbox">
+                    <input type="checkbox" name="check" id="vote3_1"/>
+                    <label for="vote3_1">Каллиграфия</label>
+                  </div>
+                </fieldset>
+                <fieldset class="form__row form__row--checkbox">
+                  <div class="form__checkbox">
+                    <input type="checkbox" name="check" id="vote3_2"/>
+                    <label for="vote3_2">Скорочтение</label>
+                  </div>
+                </fieldset>
+                <fieldset class="form__row form__row--checkbox">
+                  <div class="form__checkbox">
+                    <input type="checkbox" name="check" id="vote3_3"/>
+                    <label for="vote3_3">Ментальная арифметика</label>
+                  </div>
+                </fieldset>
+                <fieldset class="form__row form__row--checkbox">
+                  <div class="form__checkbox">
+                    <input type="checkbox" name="check" id="vote3_4"/>
+                    <label for="vote3_4">Английский язык</label>
+                  </div>
+                </fieldset>
+                <fieldset class="form__row form__row--checkbox">
+                  <div class="form__checkbox">
+                    <input type="checkbox" name="check" id="vote3_5"/>
+                    <label for="vote3_5">Каллиграфия</label>
+                  </div>
+                </fieldset>
+                <fieldset class="form__row form__row--checkbox">
+                  <div class="form__checkbox">
+                    <input type="checkbox" name="check" id="vote3_6"/>
+                    <label for="vote3_6">Ментальная арифметика</label>
+                  </div>
+                </fieldset>
+                <div class="form__action">
+                  <button class="button button--medium" type="submit">Проголосовать</button>
+                </div>
+              </form>
+              <div class="votes-total">Проголосовали 706 человек</div>
+              <div class="votes-author">
+                <div class="votes-avatar"><img src="img/img_avatar3.png" srcset="img/img_avatar3.png, img/img_avatar3@2x.png 2x" alt=""/></div>
+                <div class="votes-author-name">Артем С.</div>
+              </div>
+            </div>
+          </li>
+
+          <li class="votes-item">
+            <div class="votes-card">
+              <div class="votes-type">Голосования</div>
+              <div class="votes-header">Какой обучающий курс вы ждёте больше всего?</div>
+              <form action="" class="votes-form">
+                <fieldset class="form__row form__row--checkbox">
+                  <div class="form__checkbox">
+                    <input type="checkbox" name="check" id="vote4_1"/>
+                    <label for="vote4_1">Каллиграфия</label>
+                  </div>
+                </fieldset>
+                <fieldset class="form__row form__row--checkbox">
+                  <div class="form__checkbox">
+                    <input type="checkbox" name="check" id="vote4_2"/>
+                    <label for="vote4_2">Скорочтение</label>
+                  </div>
+                </fieldset>
+                <fieldset class="form__row form__row--checkbox">
+                  <div class="form__checkbox">
+                    <input type="checkbox" name="check" id="vote4_3"/>
+                    <label for="vote4_3">Ментальная арифметика</label>
+                  </div>
+                </fieldset>
+                <fieldset class="form__row form__row--checkbox">
+                  <div class="form__checkbox">
+                    <input type="checkbox" name="check" id="vote4_4"/>
+                    <label for="vote4_4">Английский язык</label>
+                  </div>
+                </fieldset>
+                <fieldset class="form__row form__row--checkbox">
+                  <div class="form__checkbox">
+                    <input type="checkbox" name="check" id="vote4_5"/>
+                    <label for="vote4_5">Каллиграфия</label>
+                  </div>
+                </fieldset>
+                <fieldset class="form__row form__row--checkbox">
+                  <div class="form__checkbox">
+                    <input type="checkbox" name="check" id="vote4_6"/>
+                    <label for="vote4_6">Ментальная арифметика</label>
+                  </div>
+                </fieldset>
+                <div class="form__action">
+                  <button class="button button--medium" type="submit">Проголосовать</button>
+                </div>
+              </form>
+              <div class="votes-total">Проголосовали 706 человек</div>
+              <div class="votes-author">
+                <div class="votes-avatar"><img src="img/img_avatar3.png" srcset="img/img_avatar3.png, img/img_avatar3@2x.png 2x" alt=""/></div>
+                <div class="votes-author-name">Артем С.</div>
+              </div>
+            </div>
+          </li>
+
+          <li class="votes-item">
+            <div class="votes-card">
+              <div class="votes-type">Голосования</div>
+              <div class="votes-header">Когда вы покупаете клубную карту?</div>
+              <form action="" class="votes-form">
+                <fieldset class="form__row form__row--checkbox">
+                  <div class="form__checkbox">
+                    <input type="radio" name="vote5" id="vote5_1" checked/>
+                    <label for="vote5_1">Когда заканчивается действующая карта</label>
+                  </div>
+                </fieldset>
+                <fieldset class="form__row form__row--checkbox">
+                  <div class="form__checkbox">
+                    <input type="radio" name="vote5" id="vote5_2"/>
+                    <label for="vote5_2">Когда вижу выгодное акционное предложение</label>
+                  </div>
+                </fieldset>
+                <div class="form__action">
+                  <button class="button button--medium" type="submit">Проголосовать</button>
+                </div>
+              </form>
+              <div class="votes-total">Проголосовали 24 человека</div>
+              <div class="votes-author">
+                <div class="votes-avatar"><img src="img/img_avatar1.png" srcset="img/img_avatar1.png, img/img_avatar1@2x.png 2x" alt=""/></div>
+                <div class="votes-author-name">Артём С.</div>
+              </div>
+            </div>
+          </li>
+
+          <li class="votes-item">
+            <div class="votes-card">
+              <div class="votes-type">Голосования</div>
+              <div class="votes-header">К какому агрегатному состоянию вы относите желе?</div>
+              <form action="" class="votes-form">
+                <fieldset class="form__row form__row--checkbox">
+                  <div class="form__checkbox">
+                    <input type="radio" name="vote6" id="vote6_1"/>
+                    <label for="vote6_1">К жидкому</label>
+                  </div>
+                </fieldset>
+                <fieldset class="form__row form__row--checkbox">
+                  <div class="form__checkbox">
+                    <input type="radio" name="vote6" id="vote6_2"/>
+                    <label for="vote6_2">К твердому</label>
+                  </div>
+                </fieldset>
+                <fieldset class="form__row form__row--checkbox">
+                  <div class="form__checkbox">
+                    <input type="radio" name="vote6" id="vote6_3" checked/>
+                    <label for="vote6_3">К газообразному</label>
+                  </div>
+                </fieldset>
+                <fieldset class="form__row form__row--checkbox">
+                  <div class="form__checkbox">
+                    <input type="radio" name="vote6" id="vote6_4"/>
+                    <label for="vote6_4">К плазме</label>
+                  </div>
+                </fieldset>
+                <div class="form__action">
+                  <button class="button button--medium" type="submit">Проголосовать</button>
+                </div>
+              </form>
+              <div class="votes-total">Проголосовали 706 человек</div>
+              <div class="votes-author">
+                <div class="votes-avatar"><img src="img/img_avatar2.png" srcset="img/img_avatar2.png, img/img_avatar2@2x.png 2x" alt=""/></div>
+                <div class="votes-author-name">Мария Ж.</div>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+        <div class="loadmore-action">
+          <button class="button button--wired button--medium"><span class="button__icon">{{mixins.icon('refresh')}}</span>Показать больше</button>
+        </div>
+      </div>
+    </div> <!-- .page-content -->
+  </div> <!-- .wrapper -->
+</main>
+
+{% endblock %}

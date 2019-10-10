@@ -203,6 +203,9 @@ body {
   .button {
     margin-left: auto;
   }
+  .header-link {
+    margin-left: auto;
+  }
 }
 
 .header-bordered {
@@ -254,3 +257,10 @@ body {
   margin-bottom: 24px;
 }
 
+a.header-link {
+  font-family: Helvetica-Light, sans-serif;
+  font-size: 24px;
+  line-height: 29px;
+  color: $cDarkGrey;
+  border-bottom: 0;
+}

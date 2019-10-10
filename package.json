@@ -73,6 +73,7 @@
     "webpack-cli": "^3.3.0"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.6.0"
+    "@babel/polyfill": "^7.6.0",
+    "masonry-layout": "^4.2.2"
   }
 }
