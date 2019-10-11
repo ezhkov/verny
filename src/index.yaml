@@ -29,6 +29,9 @@ PageList:
   ready: 100
   name: Объявления детальная
 - file: page-vote.html
-  ready: 10
+  ready: 100
   name: Опросы
+- file: page-struct.html
+  ready: 100
+  name: Структура компании
 

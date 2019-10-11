@@ -1,0 +1,57 @@
+.structure {
+
+}
+
+.struct-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.struct-item {
+  width: 500px;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 64px;
+  &:nth-child(odd) {
+    margin-left: 100px;
+  }
+  &:first-child {
+    width: 100%;
+    padding-bottom: 64px;
+    border-bottom: 1px solid $cLightGrey;
+    margin-left: 0;
+  }
+}
+
+.struct-icon {
+  width: 140px;
+  height: 140px;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $cMediumGrey;
+  border-radius: 50px 0 50px 0;
+  font-size: 70px;
+  margin-right: 48px;
+}
+
+.struct-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 890px;
+
+}
+
+.struct-header {
+  font-family: Helvetica-Light, sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+  margin-bottom: 16px;
+}
+
+.struct-body {
+  line-height: 26px;
+}
