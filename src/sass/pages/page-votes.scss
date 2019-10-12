@@ -2,39 +2,6 @@
   padding-bottom: 96px;
 }
 
-.votes-list {
-  position: relative;
-  display: block;
-}
-
-.votes-item {
-  display: block;
-  width: 380px;
-  margin-bottom: 20px;
-}
-
-.votes-card {
-  border-radius: 50px 0 50px 0;
-  border:1px solid $cLightGrey;
-  padding: 40px;
-}
-
-.votes-type {
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  margin-bottom: 24px;
-}
-
-.votes-header {
-  font-family: Helvetica-Light, sans-serif;
-  font-size: 24px;
-  line-height: 29px;
-  color: #000000;
-  margin-bottom: 32px;
-}
-
 .votes-form {
 
 }
@@ -44,10 +11,12 @@
   font-size: 14px;
   line-height: 19px;
   color: $cDarkGrey;
+  + .votes-author {
+    margin-top: 24px;
+  }
 }
 
 .votes-author {
-  margin-top: 24px;
   display: flex;
   align-items: center;
 }

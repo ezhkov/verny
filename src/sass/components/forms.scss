@@ -223,15 +223,11 @@ textarea {
   &:active, &:hover {
     background-color: $cRedActive;
   }
-  + .button, + .download-doc {
+  + .button, + .download-doc, + a {
     margin-left: 24px;
   }
-  &[href^="#"] {
-    border: 0;
+  &:hover {
     color: #ffffff;
-    &:hover {
-      color: #ffffff;
-    }
   }
 }
 

@@ -34,4 +34,7 @@ PageList:
 - file: page-struct.html
   ready: 100
   name: Структура компании
+- file: page-events.html
+  ready: 10
+  name: Лента событий
 

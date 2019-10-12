@@ -7,7 +7,7 @@ window.addEventListener('load', () => {
   masonryList = document.querySelector('.js-masonry');
   if (masonryList) {
     const msnry = new Masonry( '.js-masonry', {
-      itemSelector: '.votes-item',
+      itemSelector: '.grid-cards-item',
       gutter: 20,
       columnWidth: 380
     });
