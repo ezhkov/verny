@@ -1,0 +1,221 @@
+{% set title = "Рекомендованная литература" %}
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<main class="site-inner">
+  <div class="wrapper wrapper--rel">
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs-list">
+        <li class="breadcrumbs-item">
+          <a href="#" class="breadcrumbs-link">Главная</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a href="#" class="breadcrumbs-link">Обучение</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link">Рекомендованная литература</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-content">
+      <h1 class="header-with-info">Рекомендованная литература
+        <span class="header-info">
+          <i class="header-icon">
+            <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.5516 2.77872L12 1.87022L12.4484 2.77872L15.271 8.49791L21.5825 9.41503L22.585 9.56071L21.8596 10.2679L17.2925 14.7196L18.3707 21.0056L18.5419 22.0042L17.6452 21.5327L12 18.5649L6.35482 21.5327L5.45808 22.0042L5.62934 21.0056L6.70748 14.7196L2.14043 10.2679L1.41496 9.56071L2.41754 9.41503L8.72904 8.49791L11.5516 2.77872Z" stroke-linecap="round"/>
+            </svg>
+          </i>
+        </span>
+      </h1>
+      <h2>Самое популярное</h2>
+      <ul class="recommend-list">
+        <li class="recommend-item recommend-item--vert">
+          <div class="recommend-image">
+            <img src="img/img_recommend1.jpg" srcset="img/img_recommend1.jpg, img/img_recommend1@2x.jpg 2x" alt="Общаться с ребенком. Как? Ю. Гиппенрейтер"/>
+            <span class="recommend-filetype">pdf</span>
+          </div>
+          <div class="recommend-content">
+            <div class="recommend-header">
+              <h3 class="recommend-heading"><a href="/">Общаться с ребенком. Как?</a></h3>
+              <div class="recommend-authors"><span class="recommend-author">Ю. Гиппенрейтер</span></div>
+            </div>
+
+            <div class="recommend-description">
+              <p>Малыш, который получает полноценное питание и хороший...</p>
+            </div>
+          </div>
+        </li>
+        <li class="recommend-item recommend-item--vert">
+          <div class="recommend-image">
+            <img src="img/img_recommend2.jpg" srcset="img/img_recommend2.jpg, img/img_recommend2@2x.jpg 2x" alt="Внутри Черного Зеркала. Брукер Чарли"/>
+            <span class="recommend-filetype">pdf</span>
+          </div>
+          <div class="recommend-content">
+            <div class="recommend-header">
+              <h3 class="recommend-heading"><a href="/">Внутри Черного Зеркала</a></h3>
+              <div class="recommend-authors"><span class="recommend-author">Брукер Чарли</span></div>
+            </div>
+
+            <div class="recommend-description">
+              <p>Малыш, который получает полноценное питание и хороший...</p>
+            </div>
+          </div>
+        </li>
+        <li class="recommend-item recommend-item--vert">
+          <div class="recommend-image">
+            <img src="img/img_recommend3.jpg" srcset="img/img_recommend3.jpg, img/img_recommend3@2x.jpg 2x" alt="Пожиратели времени. Фридман А.С."/>
+            <span class="recommend-filetype">pdf</span>
+          </div>
+          <div class="recommend-content">
+            <div class="recommend-header">
+              <h3 class="recommend-heading"><a href="/">Пожиратели времени</a></h3>
+              <div class="recommend-authors"><span class="recommend-author">Фридман А.С.</span></div>
+            </div>
+
+            <div class="recommend-description">
+              <p>Малыш, который получает полноценное питание и хороший...</p>
+            </div>
+          </div>
+        </li>
+        <li class="recommend-item recommend-item--vert">
+          <div class="recommend-image">
+            <img src="img/img_recommend4.jpg" srcset="img/img_recommend4.jpg, img/img_recommend4@2x.jpg 2x" alt="Искусство думать. Эдвард де Боно"/>
+            <span class="recommend-filetype">pdf</span>
+          </div>
+          <div class="recommend-content">
+            <div class="recommend-header">
+              <h3 class="recommend-heading"><a href="/">Искусство думать</a></h3>
+              <div class="recommend-authors"><span class="recommend-author">Эдвард де Боно</span></div>
+            </div>
+
+            <div class="recommend-description">
+              <p>Литосфера, как теперь известно, питание прогиба исходным...</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="recommend-tabs">
+        <div class="tabs">
+          <ul class="tabs-list">
+            <li class="tabs-item">
+              <a href="#tab1" class="tabs-link tabs-link--active">Начальный уровень</a>
+            </li>
+            <li class="tabs-item">
+              <a href="#tab2" class="tabs-link">Продвинутый уровень</a>
+            </li>
+          </ul>
+          <section class="tabs-content tabs-content--active" id="tab1">
+            <ul class="recommend-list recommend-list--hor">
+              <li class="recommend-item recommend-item--hor">
+                <div class="recommend-image">
+                  <img src="img/img_recommend1.jpg" srcset="img/img_recommend1.jpg, img/img_recommend1@2x.jpg 2x" alt="Общаться с ребенком. Как? Ю. Гиппенрейтер"/>
+                  <span class="recommend-filetype">pdf</span>
+                </div>
+                <div class="recommend-content">
+                  <div class="recommend-header">
+                    <h3 class="recommend-heading"><a href="/">Общаться с ребенком. Как?</a></h3>
+                    <div class="recommend-authors"><span class="recommend-author">Ю. Гиппенрейтер</span></div>
+                  </div>
+
+                  <div class="recommend-description">
+                    <p>Малыш, который получает полноценное питание и хороший медицинский уход, но лишен полноценного общения со взрослым, плохо развивается не только психически, но и физически: он не растет, худеет, теряет интерес к жизни. «Проблемные», «трудные», «непослушные» и «невозможные» дети, так же как дети «с комплексами», «забитые» или «несчастные» – всегда результат неправильно сложившихся отношений в семье. </p>
+                  </div>
+                </div>
+              </li>
+              <li class="recommend-item recommend-item--hor">
+                <div class="recommend-image">
+                  <img src="img/img_recommend2.jpg" srcset="img/img_recommend2.jpg, img/img_recommend2@2x.jpg 2x" alt="Внутри Черного Зеркала. Брукер Чарли"/>
+                  <span class="recommend-filetype">pdf</span>
+                </div>
+                <div class="recommend-content">
+                  <div class="recommend-header">
+                    <h3 class="recommend-heading"><a href="/">Внутри Черного Зеркала</a></h3>
+                    <div class="recommend-authors"><span class="recommend-author">Брукер Чарли</span></div>
+                  </div>
+
+                  <div class="recommend-description">
+                    <p>Малыш, который получает полноценное питание и хороший медицинский уход, но лишен полноценного общения со взрослым, плохо развивается не только психически, но и физически: он не растет, худеет, теряет интерес к жизни. «Проблемные», «трудные», «непослушные» и «невозможные» дети, так же как дети «с комплексами», «забитые» или «несчастные» – всегда результат неправильно сложившихся отношений в семье. </p>
+                  </div>
+                </div>
+              </li>
+              <li class="recommend-item recommend-item--hor">
+                <div class="recommend-image">
+                  <img src="img/img_recommend3.jpg" srcset="img/img_recommend3.jpg, img/img_recommend3@2x.jpg 2x" alt="Пожиратели времени. Фридман А.С."/>
+                  <span class="recommend-filetype">pdf</span>
+                </div>
+                <div class="recommend-content">
+                  <div class="recommend-header">
+                    <h3 class="recommend-heading"><a href="/">Пожиратели времени</a></h3>
+                    <div class="recommend-authors"><span class="recommend-author">Фридман А.С.</span></div>
+                  </div>
+
+                  <div class="recommend-description">
+                    <p>Малыш, который получает полноценное питание и хороший медицинский уход, но лишен полноценного общения со взрослым, плохо развивается не только психически, но и физически: он не растет, худеет, теряет интерес к жизни. «Проблемные», «трудные», «непослушные» и «невозможные» дети, так же как дети «с комплексами», «забитые» или «несчастные» – всегда результат неправильно сложившихся отношений в семье. Книга Юлии Борисовны Гиппенрейтер нацелена на гармонизацию взаимоотношений в семье, ведь стиль общения родителей сказывается на будущем их ребенка! </p>
+                  </div>
+                </div>
+              </li>
+              <li class="recommend-item recommend-item--hor">
+                <div class="recommend-image">
+                  <img src="img/img_recommend4.jpg" srcset="img/img_recommend4.jpg, img/img_recommend4@2x.jpg 2x" alt="Искусство думать. Эдвард де Боно"/>
+                  <span class="recommend-filetype">pdf</span>
+                </div>
+                <div class="recommend-content">
+                  <div class="recommend-header">
+                    <h3 class="recommend-heading"><a href="/">Искусство думать</a></h3>
+                    <div class="recommend-authors"><span class="recommend-author">Эдвард де Боно</span></div>
+                  </div>
+
+                  <div class="recommend-description">
+                    <p>Литосфера, как теперь известно, питание прогиба исходным материалом сменяет биокосный биотит. Лагуна дискретно несет в себе вторичный шельф. Туффит, особенно в верхах разреза, наклонно смещает эрозионный динамометаморфизм, что лишь подтверждает то, что породные отвалы располагаются на склонах. Грабен причленяет к себе лавовый поток. Оттаивание пород, а также в преимущественно песчаных и песчано-глинистых отложениях верхней и средней юры, локально опускает глетчерный отрог. </p>
+                  </div>
+                </div>
+              </li>
+              <li class="recommend-item recommend-item--hor">
+                <div class="recommend-image">
+                  <img src="img/img_recommend1.jpg" srcset="img/img_recommend1.jpg, img/img_recommend1@2x.jpg 2x" alt="Общаться с ребенком. Как? Ю. Гиппенрейтер"/>
+                  <span class="recommend-filetype">pdf</span>
+                </div>
+                <div class="recommend-content">
+                  <div class="recommend-header">
+                    <h3 class="recommend-heading"><a href="/">Общаться с ребенком. Как?</a></h3>
+                    <div class="recommend-authors"><span class="recommend-author">Ю. Гиппенрейтер</span></div>
+                  </div>
+
+                  <div class="recommend-description">
+                    <p>Малыш, который получает полноценное питание и хороший медицинский уход, но лишен полноценного общения со взрослым, плохо развивается не только психически, но и физически: он не растет, худеет, теряет интерес к жизни. «Проблемные», «трудные», «непослушные» и «невозможные» дети, так же как дети «с комплексами», «забитые» или «несчастные» – всегда результат неправильно сложившихся отношений в семье. </p>
+                  </div>
+                </div>
+              </li>
+              <li class="recommend-item recommend-item--hor">
+                <div class="recommend-image">
+                  <img src="img/img_recommend2.jpg" srcset="img/img_recommend2.jpg, img/img_recommend2@2x.jpg 2x" alt="Внутри Черного Зеркала. Брукер Чарли"/>
+                  <span class="recommend-filetype">pdf</span>
+                </div>
+                <div class="recommend-content">
+                  <div class="recommend-header">
+                    <h3 class="recommend-heading"><a href="/">Внутри Черного Зеркала</a></h3>
+                    <div class="recommend-authors"><span class="recommend-author">Брукер Чарли</span></div>
+                  </div>
+
+                  <div class="recommend-description">
+                    <p>Малыш, который получает полноценное питание и хороший медицинский уход, но лишен полноценного общения со взрослым, плохо развивается не только психически, но и физически: он не растет, худеет, теряет интерес к жизни. «Проблемные», «трудные», «непослушные» и «невозможные» дети, так же как дети «с комплексами», «забитые» или «несчастные» – всегда результат неправильно сложившихся отношений в семье. </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section class="tabs-content" id="tab2">
+            <div class="text-common">
+              <h3>Вкладка 2</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum error hic, impedit nemo numquam officia quas quis temporibus voluptate? A deserunt dicta doloribus eos eum nam nihil non rerum totam.</p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div> <!-- .page-content -->
+  </div> <!-- .wrapper -->
+</main>
+
+{% endblock %}

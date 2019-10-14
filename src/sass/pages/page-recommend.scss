@@ -1,0 +1,128 @@
+.recommend-list {
+  display: flex;
+}
+
+.recommend-list--vert {
+
+}
+
+.recommend-list--hor {
+  flex-wrap: wrap;
+}
+
+.recommend-item {
+
+}
+
+.recommend-item--vert {
+  width: calc((100% - 60px) / 4);
+
+  .recommend-image {
+    width: 100%;
+    margin-bottom: 24px;
+    height: 340px;
+  }
+
+  .recommend-description {
+    height: 48px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  +.recommend-item--vert {
+    margin-left: 20px;
+  }
+
+  .recommend-header {
+    margin-bottom: 16px;
+  }
+}
+
+.recommend-item--hor {
+  width: calc((100% - 40px) / 2);
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 56px;
+  .recommend-image {
+    width: 180px;
+    height: 220px;
+    margin-right: 20px;
+    flex-shrink: 0;
+  }
+  &:nth-child(2n) {
+    margin-left: 40px;
+  }
+}
+
+.recommend-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px 0 10px 0;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.recommend-filetype {
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: OpenSans-SemiBold, sans-serif;
+  color: $cLightGrey;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 19px;
+  background: $cRed;
+  border-radius: 10px 0 10px 0;
+  left: 0;
+  top: 0;
+}
+
+
+.recommend-content {
+
+}
+
+.recommend-header {
+  margin-bottom: 24px;
+}
+
+.recommend-heading {
+  font-family: Helvetica-Light, sans-serif;
+  color: #000000;
+  font-size: 22px;
+  line-height: 32px;
+  margin-right: 8px;
+  display: inline;
+  margin-bottom: 0;
+  a {
+    border-bottom: 0;
+  }
+}
+
+.recommend-authors {
+  font-family: Helvetica-Light, sans-serif;
+  color: $cDarkGrey;
+  font-size: 22px;
+  line-height: 32px;
+  display: inline-block;
+}
+
+.recommend-author {
+  white-space: nowrap;
+}
+
+.recommend-description {
+  color: $cDarkGrey;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.recommend-tabs {
+  margin-top: 104px;
+}

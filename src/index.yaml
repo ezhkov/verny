@@ -35,6 +35,9 @@ PageList:
   ready: 100
   name: Структура компании
 - file: page-events.html
-  ready: 10
+  ready: 100
   name: Лента событий
+- file: page-recommend.html
+  ready: 100
+  name: Рекомендованная литература
 
