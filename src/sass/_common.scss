@@ -200,10 +200,7 @@ body {
 .header-with-info {
   display: flex;
   align-items: center;
-  .button {
-    margin-left: auto;
-  }
-  .header-link {
+  .button, .header-link, .download-doc {
     margin-left: auto;
   }
 }

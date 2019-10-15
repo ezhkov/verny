@@ -40,4 +40,20 @@ PageList:
 - file: page-recommend.html
   ready: 100
   name: Рекомендованная литература
+- file: page-contests1.html
+  ready: 100
+  name: Конкурсы (версия 1)
+- file: page-contests2.html
+  ready: 100
+  name: Конкурсы (версия 2)
+- file: page-contests3.html
+  ready: 100
+  name: Конкурсы (версия 3)
+- file: page-contest-detail.html
+  ready: 100
+  name: Детальная конкурса
+- file: page-contest-result.html
+  ready: 100
+  name: Результаты конкурса
+
 

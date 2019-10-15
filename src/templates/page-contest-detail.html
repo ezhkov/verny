@@ -1,0 +1,57 @@
+{% set title = "Детальная конкурса" %}
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<main class="site-inner">
+  <div class="wrapper wrapper--rel">
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs-list">
+        <li class="breadcrumbs-item">
+          <a href="#" class="breadcrumbs-link">Главная</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a href="#" class="breadcrumbs-link">Тусовка</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link">Конкурсы</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-content">
+      <h1 >Лучший магазин на вашей улице</h1>
+      <div class="contest-detail">
+        <main class="contest-detail-main">
+          <div class="text-common">
+            <h3>Критерии оценки</h3>
+            <ul>
+              <li>Выполнение плана по РТО.</li>
+              <li>Выполнение норматива потерь и динамика потерь относительно последней ПИ.</li>
+              <li>Чистота и качество работы магазина на основании карт проверок СВ.</li>
+              <li>Дополнительные показатели установленные НУТом, не позднее чем за 2 дня до начала месяца.</li>
+            </ul>
+            <h3>Кто участвует?</h3>
+            <p>Все магазины сети работающие более 3 месяцев.</p>
+            <h3>Как определяются победители?</h3>
+            <p>Каждый месяц выбирается по одному лучшему магазину у каждого РДП.</p>
+            <div class="form__action">
+              <a href="page-contest-result.html" class="button">Смотреть результаты</a>
+            </div>
+          </div>
+        </main>
+        <aside class="contest-detail-aside">
+          <div class="contest-prizes">
+            <h2>Призы</h2>
+            <div class="contest-prize-image">
+              <img src="img/img_prize.jpg" srcset="img/img_prize.jpg, img/img_prize@2x.jpg 2x" alt=""/>
+            </div>
+            <p>Подарочные карты на 10 000 ₽ одной из сетей продажи бытовой техники.</p>
+          </div>
+        </aside>
+      </div>
+    </div> <!-- .page-content -->
+  </div> <!-- .wrapper -->
+</main>
+
+{% endblock %}

@@ -1,0 +1,128 @@
+{% set title = "Конкурсы (вариант 1)" %}
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<main class="site-inner">
+  <div class="wrapper wrapper--rel">
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs-list">
+        <li class="breadcrumbs-item">
+          <a href="#" class="breadcrumbs-link">Главная</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a href="#" class="breadcrumbs-link">Тусовка</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a href="#" class="breadcrumbs-link">Конкурсы</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link">Лучший магазин на вашей улице</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-content">
+      <h1 class="header-with-info">Победители февраля
+        <span class="header-info">
+          <i class="header-icon">
+            <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.5516 2.77872L12 1.87022L12.4484 2.77872L15.271 8.49791L21.5825 9.41503L22.585 9.56071L21.8596 10.2679L17.2925 14.7196L18.3707 21.0056L18.5419 22.0042L17.6452 21.5327L12 18.5649L6.35482 21.5327L5.45808 22.0042L5.62934 21.0056L6.70748 14.7196L2.14043 10.2679L1.41496 9.56071L2.41754 9.41503L8.72904 8.49791L11.5516 2.77872Z" stroke-linecap="round"/>
+            </svg>
+          </i>
+        </span>
+        <a href="/" class="download-doc">
+          <span class="download-doc-icon">{{mixins.icon('download_doc')}}</span>
+          <div class="download-doc-info">
+            <span class="download-doc-name">Архив победителей</span>
+            <span class="download-doc-meta">PDF, 5 МБ</span>
+          </div>
+        </a>
+      </h1>
+      <div class="contest-winners">
+        <ul class="winners-list">
+          <li class="winners-item">
+            <div class="winners-image"><img src="img/img_winners1.jpg" srcset="img/img_winners1.jpg, img/img_winners1@2x.jpg 2x" alt=""/></div>
+            <div class="winners-body">
+              <span class="winners-name">Магазин 1078</span>
+              <span class="winners-location"><i class="winners-location-icon">{{mixins.icon('pin')}}</i>Киржач, 40 лет Октября 11</span>
+              <div class="winners-people">
+                <p class="winners-contact">ДМ: Лапицкая Ирина</p>
+                <p class="winners-contact">СВ: Баранова Анна</p>
+                <p class="winners-contact">РД: Вишневская Светлана</p>
+              </div>
+              <span class="winners-badge">{{mixins.icon('badge')}}</span>
+            </div>
+          </li>
+          <li class="winners-item">
+            <div class="winners-image"><img src="img/img_winners2.jpg" srcset="img/img_winners2.jpg, img/img_winners2@2x.jpg 2x" alt=""/></div>
+            <div class="winners-body">
+              <span class="winners-name">Магазин 1258</span>
+              <span class="winners-location"><i class="winners-location-icon">{{mixins.icon('pin')}}</i>Лобня, Авиационная 3</span>
+              <div class="winners-people">
+                <p class="winners-contact">ДМ: Герасимова Валентина</p>
+                <p class="winners-contact">СВ: Долгачев Василий</p>
+                <p class="winners-contact">РД: Витушкин Сергей</p>
+              </div>
+              <span class="winners-badge">{{mixins.icon('badge')}}</span>
+            </div>
+          </li>
+          <li class="winners-item">
+            <div class="winners-image"><img src="img/img_winners3.jpg" srcset="img/img_winners3.jpg, img/img_winners3@2x.jpg 2x" alt=""/></div>
+            <div class="winners-body">
+              <span class="winners-name">Магазин 1358</span>
+              <span class="winners-location"><i class="winners-location-icon">{{mixins.icon('pin')}}</i>Правдинский, Степаньковское 39</span>
+              <div class="winners-people">
+                <p class="winners-contact">ДМ: Орлова Екатерина</p>
+                <p class="winners-contact">СВ: Пензин Кирилл</p>
+                <p class="winners-contact">РД: Ремпель Алексей</p>
+              </div>
+              <span class="winners-badge">{{mixins.icon('badge')}}</span>
+            </div>
+          </li>
+          <li class="winners-item">
+            <div class="winners-image"><img src="img/img_winners4.jpg" srcset="img/img_winners4.jpg, img/img_winners4@2x.jpg 2x" alt=""/></div>
+            <div class="winners-body">
+              <span class="winners-name">Магазин 1078</span>
+              <span class="winners-location"><i class="winners-location-icon">{{mixins.icon('pin')}}</i>Киржач, 40 лет Октября 11</span>
+              <div class="winners-people">
+                <p class="winners-contact">ДМ: Герасимова Валентина</p>
+                <p class="winners-contact">СВ: Долгачев Василий</p>
+                <p class="winners-contact">РД: Витушкин Сергей</p>
+              </div>
+              <span class="winners-badge">{{mixins.icon('badge')}}</span>
+            </div>
+          </li>
+          <li class="winners-item">
+            <div class="winners-image"><img src="img/img_winners5.jpg" srcset="img/img_winners5.jpg, img/img_winners5@2x.jpg 2x" alt=""/></div>
+            <div class="winners-body">
+              <span class="winners-name">Магазин 1258</span>
+              <span class="winners-location"><i class="winners-location-icon">{{mixins.icon('pin')}}</i>Лобня, Авиационная 3</span>
+              <div class="winners-people">
+                <p class="winners-contact">ДМ: Орлова Екатерина</p>
+                <p class="winners-contact">СВ: Пензин Кирилл</p>
+                <p class="winners-contact">РД: Ремпель Алексей</p>
+              </div>
+              <span class="winners-badge">{{mixins.icon('badge')}}</span>
+            </div>
+          </li>
+          <li class="winners-item">
+            <div class="winners-image"><img src="img/img_winners6.jpg" srcset="img/img_winners6.jpg, img/img_winners6@2x.jpg 2x" alt=""/></div>
+            <div class="winners-body">
+              <span class="winners-name">Магазин 1358</span>
+              <span class="winners-location"><i class="winners-location-icon">{{mixins.icon('pin')}}</i>Правдинский, Степаньковское 39</span>
+              <div class="winners-people">
+                <p class="winners-contact">ДМ: Лапицкая Ирина</p>
+                <p class="winners-contact">СВ: Баранова Анна</p>
+                <p class="winners-contact">РД: Вишневская Светлана</p>
+              </div>
+              <span class="winners-badge">{{mixins.icon('badge')}}</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div> <!-- .page-content -->
+  </div> <!-- .wrapper -->
+</main>
+
+{% endblock %}
