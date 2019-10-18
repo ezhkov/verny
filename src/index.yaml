@@ -55,5 +55,11 @@ PageList:
 - file: page-contest-result.html
   ready: 100
   name: Результаты конкурса
+- file: page-bag.html
+  ready: 100
+  name: Портфель директора
+- file: page-404.html
+  ready: 100
+  name: Страница 404
 
 
