@@ -1,0 +1,281 @@
+{% set title = "Портфель директора" %}
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<main class="site-inner">
+  <div class="wrapper wrapper--rel">
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs-list">
+        <li class="breadcrumbs-item">
+          <a href="#" class="breadcrumbs-link">Материалы</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link">Портфель директора</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-content">
+      <h1 class="header-with-info">Портфель директора
+        <span class="header-info">
+          <i class="header-icon">
+            <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.5516 2.77872L12 1.87022L12.4484 2.77872L15.271 8.49791L21.5825 9.41503L22.585 9.56071L21.8596 10.2679L17.2925 14.7196L18.3707 21.0056L18.5419 22.0042L17.6452 21.5327L12 18.5649L6.35482 21.5327L5.45808 22.0042L5.62934 21.0056L6.70748 14.7196L2.14043 10.2679L1.41496 9.56071L2.41754 9.41503L8.72904 8.49791L11.5516 2.77872Z" stroke-linecap="round"/>
+            </svg>
+          </i>
+        </span>
+      </h1>
+      <div class="direction">
+        <ul class="direction-list">
+          <li class="direction-item">
+            <div class="direction-header"><span class="direction-icon">{{mixins.icon('bp1')}}</span>Меморандумы</div>
+            <div class="direction-content">
+              <div class="direction-inner-header">
+                <span class="direction-icon">{{mixins.icon('bp1')}}</span>
+                <div class="direction-header">Меморандумы</div>
+              </div>
+              <div class="direction-inner-content">
+                <ul class="direction-inner-links">
+                  <li class="direction-inner-link-item">
+                    <a href="/" class="direction-inner-link">Действующие</a>
+                  </li>
+                  <li class="direction-inner-link-item">
+                    <a href="/" class="direction-inner-link">Архив</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="direction-item">
+            <div class="direction-header"><span class="direction-icon">{{mixins.icon('bp2')}}</span>Товар</div>
+            <div class="direction-content">
+              <div class="direction-inner-header">
+                <span class="direction-icon">{{mixins.icon('bp2')}}</span>
+                <div class="direction-header">Товар</div>
+              </div>
+              <div class="direction-inner-content">
+                <ul class="direction-inner-links">
+                  <li class="direction-inner-link-item">
+                    <a href="/" class="direction-inner-link">Выкладка</a>
+                  </li>
+                  <li class="direction-inner-link-item">
+                    <a href="/" class="direction-inner-link">Промо</a>
+                  </li>
+                  <li class="direction-inner-link-item">
+                    <a href="/" class="direction-inner-link">Качество</a>
+                  </li>
+                  <li class="direction-inner-link-item">
+                    <a href="/" class="direction-inner-link">Ассортимент</a>
+                  </li>
+                  <li class="direction-inner-link-item">
+                    <a href="/" class="direction-inner-link">Собственное производство</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="direction-item">
+            <div class="direction-header"><span class="direction-icon">{{mixins.icon('bp3')}}</span>Логистика</div>
+            <div class="direction-content">
+              <div class="direction-inner-header">
+                <span class="direction-icon">{{mixins.icon('bp3')}}</span>
+                <div class="direction-header">Логистика</div>
+              </div>
+              <div class="direction-inner-content">
+                <ul class="direction-inner-links">
+                  <li class="direction-inner-link-item">
+                    <a href="/" class="direction-inner-link">Заказ</a>
+                  </li>
+                  <li class="direction-inner-link-item">
+                    <a href="/" class="direction-inner-link">Приемка</a>
+                  </li>
+                  <li class="direction-inner-link-item">
+                    <a href="/" class="direction-inner-link">Автозаказ</a>
+                  </li>
+                  <li class="direction-inner-link-item">
+                    <a href="/" class="direction-inner-link">Вопросы</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="direction-item">
+            <div class="direction-header"><span class="direction-icon">{{mixins.icon('bp4')}}</span>Персонал</div>
+            <div class="direction-content">
+              <div class="direction-inner-header">
+                <span class="direction-icon">{{mixins.icon('bp4')}}</span>
+                <div class="direction-header">Персонал</div>
+              </div>
+              <div class="direction-inner-content">
+                <ul class="direction-inner-links">
+                  <li class="direction-inner-link-item">
+                    <a href="/" class="direction-inner-link">Персонал</a>
+                  </li>
+                  <li class="direction-inner-link-item">
+                    <a href="/" class="direction-inner-link">Охрана труда</a>
+                  </li>
+                  <li class="direction-inner-link-item">
+                    <a href="/" class="direction-inner-link">Учебный центр</a>
+                  </li>
+                  <li class="direction-inner-link-item">
+                    <a href="/" class="direction-inner-link">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="direction-item">
+            <div class="direction-header"><span class="direction-icon">{{mixins.icon('bp5')}}</span>Касса</div>
+            <div class="direction-content">
+              <div class="direction-inner-header">
+                <span class="direction-icon">{{mixins.icon('bp5')}}</span>
+                <div class="direction-header">Касса</div>
+              </div>
+              <div class="direction-inner-content">
+                <ul class="direction-inner-links">
+                  <li class="direction-inner-link-item">
+                    <a href="/" class="direction-inner-link">Работа на кассе</a>
+                  </li>
+                  <li class="direction-inner-link-item">
+                    <a href="/" class="direction-inner-link">Главная касса</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="direction-item">
+            <div class="direction-header"><span class="direction-icon">{{mixins.icon('bp6')}}</span>Программное обеспечение</div>
+            <div class="direction-content">
+              <div class="direction-inner-header">
+                <span class="direction-icon">{{mixins.icon('bp6')}}</span>
+                <div class="direction-header">Программное обеспечение</div>
+              </div>
+              <div class="direction-inner-content">
+                <ul class="direction-inner-links">
+                  <li class="direction-inner-link-item">
+                    <a href="/" class="direction-inner-link">ЕГАИС</a>
+                  </li>
+                  <li class="direction-inner-link-item">
+                    <a href="/" class="direction-inner-link">ТСД</a>
+                  </li>
+                  <li class="direction-inner-link-item">
+                    <a href="/" class="direction-inner-link">ОТРС</a>
+                  </li>
+                  <li class="direction-inner-link-item">
+                    <a href="/" class="direction-inner-link">Вернопортал</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="direction-item">
+            <div class="direction-header"><span class="direction-icon">{{mixins.icon('bp7')}}</span>Стоимость ТМЦ и безопасность</div>
+            <div class="direction-content">
+              <div class="direction-inner-header">
+                <span class="direction-icon">{{mixins.icon('bp7')}}</span>
+                <div class="direction-header">Стоимость ТМЦ и безопасность</div>
+              </div>
+              <div class="direction-inner-content">
+                <ul class="direction-inner-links">
+                  <li class="direction-inner-link-item">
+                    <a href="/" class="direction-inner-link">Инвентаризация</a>
+                  </li>
+                  <li class="direction-inner-link-item">
+                    <a href="/" class="direction-inner-link">СБХ</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="direction-item">
+            <div class="direction-header"><span class="direction-icon">{{mixins.icon('bp8')}}</span>Магазин</div>
+            <div class="direction-content">
+              <div class="direction-inner-header">
+                <span class="direction-icon">{{mixins.icon('bp8')}}</span>
+                <div class="direction-header">Магазин</div>
+              </div>
+              <div class="direction-inner-content">
+                <ul class="direction-inner-links">
+                  <li class="direction-inner-link-item">
+                    <a href="/" class="direction-inner-link">Планировки</a>
+                  </li>
+                  <li class="direction-inner-link-item">
+                    <a href="/" class="direction-inner-link">Эксплуатация и НЗ</a>
+                  </li>
+                  <li class="direction-inner-link-item">
+                    <a href="/" class="direction-inner-link">Реальное время</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="direction-item">
+            <div class="direction-header"><span class="direction-icon">{{mixins.icon('bp9')}}</span>Документы</div>
+            <div class="direction-content">
+              <div class="direction-inner-header">
+                <span class="direction-icon">{{mixins.icon('bp9')}}</span>
+                <div class="direction-header">Документы</div>
+              </div>
+              <div class="direction-inner-content">
+                <ul class="direction-inner-links">
+                  <li class="direction-inner-link-item">
+                    <a href="/" class="direction-inner-link">Инструкции</a>
+                  </li>
+                  <li class="direction-inner-link-item">
+                    <a href="/" class="direction-inner-link">Доска информации</a>
+                  </li>
+                  <li class="direction-inner-link-item">
+                    <a href="/" class="direction-inner-link">Лицензии</a>
+                  </li>
+                  <li class="direction-inner-link-item">
+                    <a href="/" class="direction-inner-link">Проверка гос. органов</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="direction-item">
+            <div class="direction-header"><span class="direction-icon">{{mixins.icon('bp10')}}</span>Пожарная безопасность</div>
+            <div class="direction-content">
+              <div class="direction-inner-header">
+                <span class="direction-icon">{{mixins.icon('bp10')}}</span>
+                <div class="direction-header">Пожарная безопасность</div>
+              </div>
+              <div class="direction-inner-content">
+                <ul class="direction-inner-links">
+                  <li class="direction-inner-link-item">
+                    <a href="/" class="direction-inner-link">Инструкция о мерах ПБ</a>
+                  </li>
+                  <li class="direction-inner-link-item">
+                    <a href="/" class="direction-inner-link">Договора на реагирование</a>
+                  </li>
+                  <li class="direction-inner-link-item">
+                    <a href="/" class="direction-inner-link">Договора на обслуживание</a>
+                  </li>
+                  <li class="direction-inner-link-item">
+                    <a href="/" class="direction-inner-link">Приказы о назначении</a>
+                  </li>
+                  <li class="direction-inner-link-item">
+                    <a href="/" class="direction-inner-link">Приказы о соблюдении</a>
+                  </li>
+                  <li class="direction-inner-link-item">
+                    <a href="/" class="direction-inner-link">Действия при ЧС</a>
+                  </li>
+                  <li class="direction-inner-link-item">
+                    <a href="/" class="direction-inner-link">Курс ПТМ</a>
+                  </li>
+                  <li class="direction-inner-link-item">
+                    <a href="/" class="direction-inner-link">Инструктажи</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div> <!-- .page-content -->
+  </div> <!-- .wrapper -->
+</main>
+
+{% endblock %}
