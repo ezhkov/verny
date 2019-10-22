@@ -200,6 +200,10 @@ textarea {
   margin-top: 32px;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  .button {
+
+  }
 }
 
 .form__action--ralign {
@@ -209,6 +213,7 @@ textarea {
 .button {
   display: inline-flex;
   text-decoration: none;
+  white-space: nowrap;
   color: #ffffff;
   align-items: center;
   justify-content: center;
@@ -220,11 +225,14 @@ textarea {
   background-color: $cRed;
   border-radius: 30px;
   border: 0;
+  margin-right: 24px;
+  margin-bottom: 16px;
+  &:only-child {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
   &:active, &:hover {
     background-color: $cRedActive;
-  }
-  + .button, + .download-doc, + a {
-    margin-left: 24px;
   }
   &:hover {
     color: #ffffff;
@@ -382,4 +390,20 @@ a.download-doc {
 .search-icon {
   font-size: 21px;
   color: $cBlack;
+}
+
+@media (max-width: 640px) {
+  .form__checkbox {
+    margin-right: 24px;
+    margin-bottom: 16px;
+    &+.form__checkbox {
+      margin-left: 0;
+    }
+  }
+  .form__row--checkbox {
+    flex-wrap: wrap;
+    .form__checkbox:only-child {
+      margin-bottom: 0;
+    }
+  }
 }
