@@ -3,6 +3,8 @@ const userinfoTrigger = document.querySelector('.js-userinfo-trigger');
 const burgerMenu = document.querySelector('.js-burger-menu');
 const userInfo = document.querySelector('.js-userinfo');
 const userInfoClose = document.querySelector('.js-userinfo-close');
+const userInfoPersonal = document.querySelector('.js-userinfo-personal');
+const userInfoPersonalTrigger = document.querySelector('.js-userinfo-personal-trigger');
 
 const handleBurgerTriggerClick = (e) => {
   e.preventDefault();
@@ -20,10 +22,17 @@ const handleUserinfoCloseClick = (e) => {
   userInfo.classList.toggle('is-active');
 };
 
+const handleUserInfoPersonalToggle = (e) => {
+  e.preventDefault();
+  userInfoPersonal.classList.toggle('is-active');
+  userInfoPersonalTrigger.classList.toggle('is-active');
+}
+
 function initEvents() {
   burgerTrigger.addEventListener('click', handleBurgerTriggerClick);
   userinfoTrigger.addEventListener('click', handleUserinfoTriggerClick);
   userInfoClose.addEventListener('click', handleUserinfoCloseClick);
+  userInfoPersonalTrigger.addEventListener('click', handleUserInfoPersonalToggle);
 }
 
 module.exports = { initEvents };

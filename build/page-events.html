@@ -68,12 +68,21 @@
             </button>
             <div class="userinfo-popup js-userinfo">
               <div class="userinfo-popup-info">
-                <div class="userinfo-avatar">
-                  <img srcset="img/img_avatar.png, img/img_avatar@2x.png 2x" src="img/img_avatar.png" alt="Константин Константинопольский" />
+                <div class="userinfo-popup-header">
+                  <div class="userinfo-avatar">
+                    <img srcset="img/img_avatar.png, img/img_avatar@2x.png 2x" src="img/img_avatar.png" alt="Константин Константинопольский" />
+                  </div>
+                  <div class="userinfo-info">
+                    <div class="userinfo-name">Константин Константинопольский</div>
+                    <div class="userinfo-job">Инженер управления эксплуатации, Дирекция IT</div>
+                  </div>
                 </div>
-                <div class="userinfo-name">Константин Константинопольский</div>
-                <div class="userinfo-job">Инженер управления эксплуатации, Дирекция IT</div>
-                <dl class="userinfo-personal">
+                <button class="userinfo-personal-trigger js-userinfo-personal-trigger">Показать полную информацию <i class="userinfo-personal-trigger-icon">
+                    <svg class="icon icon-expand">
+                      <use xlink:href="img/sprite.svg#icon-expand"></use>
+                    </svg>
+                  </i></button>
+                <dl class="userinfo-personal js-userinfo-personal">
                   <div class="userinfo-personal-row">
                     <dt class="userinfo-personal-key">День рождения:</dt>
                     <dd class="userinfo-personal-value">26 декабря 1991 г</dd>
@@ -195,7 +204,7 @@
             </h1>
             <div class="events">
               <ul class="grid-cards-list js-masonry">
-                <li class="grid-cards-item">
+                <li class="js-masonry-item grid-cards-item">
                   <article class="grid-card grid-card--promo">
                     <header class="grid-card-header">
                       <div class="grid-card-heading">Добро пожаловать в компанию!</div>
@@ -208,7 +217,7 @@
                     </div>
                   </article>
                 </li>
-                <li class="grid-cards-item">
+                <li class="js-masonry-item grid-cards-item">
                   <article class="grid-card">
                     <header class="grid-card-header">
                       <span class="grid-card-type"><a href="/">Новости</a></span>
@@ -249,7 +258,7 @@
                     </footer>
                   </article>
                 </li>
-                <li class="grid-cards-item">
+                <li class="js-masonry-item grid-cards-item">
                   <article class="grid-card">
                     <header class="grid-card-header">
                       <span class="grid-card-type"><a href="/">Объявление</a></span>
@@ -291,7 +300,7 @@
                     </footer>
                   </article>
                 </li>
-                <li class="grid-cards-item">
+                <li class="js-masonry-item grid-cards-item">
                   <article class="grid-card">
                     <header class="grid-card-header">
                       <span class="grid-card-type"><a href="/">Мероприятия</a></span>
@@ -349,7 +358,7 @@
                     </footer>
                   </article>
                 </li>
-                <li class="grid-cards-item">
+                <li class="js-masonry-item grid-cards-item">
                   <article class="grid-card">
                     <header class="grid-card-header">
                       <span class="grid-card-type"><a href="/">Сублимированный мониторинг активности</a></span>
@@ -407,7 +416,7 @@
                     </footer>
                   </article>
                 </li>
-                <li class="grid-cards-item">
+                <li class="js-masonry-item grid-cards-item">
                   <article class="grid-card">
                     <header class="grid-card-header">
                       <span class="grid-card-type"><a href="/">Новости</a></span>
@@ -446,7 +455,7 @@
                     </footer>
                   </article>
                 </li>
-                <li class="grid-cards-item">
+                <li class="js-masonry-item grid-cards-item">
                   <article class="grid-card">
                     <header class="grid-card-header">
                       <span class="grid-card-type"><a href="/">Новости</a></span>
@@ -485,7 +494,7 @@
                     </footer>
                   </article>
                 </li>
-                <li class="grid-cards-item">
+                <li class="js-masonry-item grid-cards-item">
                   <article class="grid-card grid-card--promo">
                     <div class="grid-card-picture">
                       <img src="img/img_event3.jpg" srcset="img/img_event3.jpg, img/img_event3@2x.jpg 2x" alt="Стань народным агентом" />
@@ -501,7 +510,7 @@
                     </div>
                   </article>
                 </li>
-                <li class="grid-cards-item">
+                <li class="js-masonry-item grid-cards-item">
                   <article class="grid-card">
                     <header class="grid-card-header">
                       <span class="grid-card-type"><a href="/">Чат</a></span>
@@ -540,7 +549,7 @@
                     </footer>
                   </article>
                 </li>
-                <li class="grid-cards-item">
+                <li class="js-masonry-item grid-cards-item">
                   <article class="grid-card">
                     <header class="grid-card-header">
                       <span class="grid-card-type"><a href="/">Голосования</a></span>
@@ -599,7 +608,7 @@
                     </footer>
                   </article>
                 </li>
-                <li class="grid-cards-item">
+                <li class="js-masonry-item grid-cards-item">
                   <article class="grid-card">
                     <header class="grid-card-header">
                       <span class="grid-card-type"><a href="/">Сублимированный мониторинг активности</a></span>
@@ -657,7 +666,7 @@
                     </footer>
                   </article>
                 </li>
-                <li class="grid-cards-item">
+                <li class="js-masonry-item grid-cards-item">
                   <article class="grid-card">
                     <header class="grid-card-header">
                       <span class="grid-card-type"><a href="/">Новости</a></span>
@@ -696,7 +705,7 @@
                     </footer>
                   </article>
                 </li>
-                <li class="grid-cards-item">
+                <li class="js-masonry-item grid-cards-item">
                   <article class="grid-card">
                     <header class="grid-card-header">
                       <span class="grid-card-type"><a href="/">Объявление</a></span>

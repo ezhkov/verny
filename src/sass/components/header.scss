@@ -117,3 +117,31 @@ a.logo {
     color: $cDarkGrey;
   }
 }
+
+@media (max-width: 959px) {
+  .site-header-inner {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+  .header-burger {
+    left: 35px;
+  }
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 600px) {
+
+}
+
+@media (max-width: 414px) {
+  .site-header {
+    padding-top: 32px;
+  }
+  .logo {
+    z-index: 1;
+  }
+}

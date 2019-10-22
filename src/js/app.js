@@ -4,13 +4,14 @@ import Header from './header';
 let masonryList;
 
 window.addEventListener('load', () => {
-  masonryList = document.querySelector('.js-masonry');
-  if (masonryList) {
-    const msnry = new Masonry( '.js-masonry', {
-      itemSelector: '.grid-cards-item',
-      gutter: 20,
-      columnWidth: 380
-    });
+  masonryList = [...document.querySelectorAll('.js-masonry')];
+  if (masonryList.length) {
+    masonryList.forEach(elem => {
+      const msnry = new Masonry( elem, {
+        itemSelector: '.js-masonry-item',
+        gutter: 20,
+      });
+    })
   }
 })
 

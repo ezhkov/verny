@@ -58,12 +58,17 @@
       </button>
       <div class="userinfo-popup js-userinfo">
         <div class="userinfo-popup-info">
-          <div class="userinfo-avatar">
-            <img srcset="img/img_avatar.png, img/img_avatar@2x.png 2x" src="img/img_avatar.png" alt="Константин Константинопольский"/>
+          <div class="userinfo-popup-header">
+            <div class="userinfo-avatar">
+              <img srcset="img/img_avatar.png, img/img_avatar@2x.png 2x" src="img/img_avatar.png" alt="Константин Константинопольский"/>
+            </div>
+            <div class="userinfo-info">
+              <div class="userinfo-name">Константин Константинопольский</div>
+              <div class="userinfo-job">Инженер управления эксплуатации, Дирекция IT</div>
+            </div>
           </div>
-          <div class="userinfo-name">Константин Константинопольский</div>
-          <div class="userinfo-job">Инженер управления эксплуатации, Дирекция IT</div>
-          <dl class="userinfo-personal">
+          <button class="userinfo-personal-trigger js-userinfo-personal-trigger">Показать полную информацию <i class="userinfo-personal-trigger-icon">{{mixins.icon('expand')}}</i></button>
+          <dl class="userinfo-personal js-userinfo-personal">
             {% for userRow in user %}
             <div class="userinfo-personal-row">
               <dt class="userinfo-personal-key">{{userRow.key}}:</dt>
