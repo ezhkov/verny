@@ -9,7 +9,7 @@
 }
 
 .struct-item {
-  width: 500px;
+  width: calc((100% - 100px) / 2);
   display: flex;
   align-items: flex-start;
   margin-bottom: 64px;
@@ -54,4 +54,53 @@
 
 .struct-body {
   line-height: 26px;
+}
+
+@media (max-width: 1024px) {
+  .struct-icon {
+    margin-right: 24px;
+    width: 120px;
+    height: 120px;
+  }
+
+  .struct-item {
+    width: calc((100% - 32px) / 2);
+    margin-left: 0;
+  }
+
+  .struct-item:nth-child(2n+3) {
+    margin-left: 32px;
+  }
+}
+
+@media (max-width: 800px) {
+  .struct-item {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
+  .struct-item:nth-child(2n+3) {
+    margin-left: 0;
+  }
+  .struct-item:first-child {
+    padding-bottom: 32px;
+  }
+}
+
+@media (max-width: 475px) {
+  .struct-icon {
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 413px) {
+  .struct-item {
+    flex-direction: column;
+  }
+  .struct-icon {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
 }
