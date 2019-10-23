@@ -7,7 +7,7 @@
 
 .team-list__item {
   margin-bottom: 48px;
-  width: 480px;
+  width: 475px;
   display: flex;
   align-items: center;
 }
@@ -44,4 +44,60 @@
   font-size: 14px;
   line-height: 19px;
   color: $cDarkGrey;
+}
+
+@media (max-width: 1024px) {
+  .team-list__item {
+    width: calc(50% - 16px);
+    margin-right: 16px;
+    &:nth-child(2n) {
+      margin-right: 0;
+      margin-left: 16px;
+    }
+
+  }
+}
+
+@media (max-width: 960px) {
+  .team-list__avatar {
+    width: 100px;
+    height: 100px;
+    margin-right: 24px;
+  }
+  .team-list__job {
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 767px) {
+  .team-list__item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 32px;
+    &:nth-child(2n) {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+  }
+}
+
+@media (max-width: 414px) {
+  .team-list__name {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 375px) {
+  .team-list__item {
+    flex-direction: column;
+  }
+
+  .team-list__avatar {
+    margin-right: 0;
+    margin-bottom: 24px;
+    width: 140px;
+    height: 140px;
+  }
 }
