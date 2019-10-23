@@ -89,8 +89,10 @@
 .grid-card-footer {
   margin-top: 56px;
   display: flex;
-  .votes-author {
-    margin-left: auto;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  .events-actions-list {
+    margin-bottom: 16px;
   }
 }
 
