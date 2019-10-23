@@ -5,7 +5,7 @@
 
 .grid-cards-item {
   display: block;
-  width: 380px;
+  width: calc((100% - 40px) / 3);
   margin-bottom: 20px;
 }
 
@@ -117,5 +117,17 @@
   }
   + .grid-card-thumb-item {
     margin-left: 8px;
+  }
+}
+
+@media (max-width: 800px) {
+  .grid-cards-item {
+    width: calc((100% - 20px) / 2);
+  }
+}
+
+@media (max-width: 614px) {
+  .grid-cards-item {
+    width: 100%;
   }
 }

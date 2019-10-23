@@ -6,21 +6,27 @@
 .breadcrumbs-list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .breadcrumbs-item {
   position: relative;
-  +.breadcrumbs-item {
-    margin-left: 32px;
+  margin-left: 16px;
+  margin-right: 16px;
+  &:before {
+    content: '';
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: $cRed;
+    position: absolute;
+    top: 50%;
+    left: -16px;
+  }
+  &:first-child {
+    margin-left: 0;
     &:before {
-      content: '';
-      width: 3px;
-      height: 3px;
-      border-radius: 50%;
-      background: $cRed;
-      position: absolute;
-      top: 50%;
-      left: -16px;
+      display: none;
     }
   }
 }
@@ -32,6 +38,7 @@ a.breadcrumbs-link {
   font-family: OpenSans-SemiBold, sans-serif;
   color: $cBlack;
   border-bottom: 0;
+  white-space: nowrap;
   &[href], &.is-current {
     font-family: OpenSans-Regular, sans-serif;
     &:hover {
