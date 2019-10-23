@@ -2,10 +2,8 @@
   "presets": [
     ["@babel/preset-env",
     {
-      "useBuiltIns": "usage",
-      "targets": {
-        "browsers": ["last 4 versions", "IE 11"]
-      }
+      "useBuiltIns": "entry",
+      "corejs": 3
     }]
   ],
   "parserOpts": {

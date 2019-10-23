@@ -74,6 +74,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.6.0",
+    "core-js": "^3.3.3",
     "masonry-layout": "^4.2.2"
   }
 }
