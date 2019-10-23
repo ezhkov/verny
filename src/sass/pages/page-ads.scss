@@ -144,7 +144,8 @@ a.card-city {
 }
 
 .a_d_s-item-info {
-  width: 780px;
+  width: 100%;
+  max-width: 780px;
   margin-right: 20px;
 }
 
@@ -195,11 +196,13 @@ a.card-city {
   margin-bottom: 8px;
   margin-top: 21px;
   color: #000000;
+  text-align: center;
 }
 
 .seller-job {
   font-size: 16px;
   line-height: 22px;
+  text-align: center;
 }
 
 .seller-dept {
@@ -275,6 +278,10 @@ a.card-city {
   .cards-item {
     width: calc((100% - 60px) / 2);
   }
+
+  .seller-card {
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -283,6 +290,86 @@ a.card-city {
   }
   .card-city {
     white-space: nowrap;
+  }
+  .seller-phone {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .seller-row + .seller-row {
+    margin-top: 24px;
+  }
+
+  .seller-contacts {
+    margin-top: 24px;
+  }
+
+  .seller-email {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .a_d_s-item {
+    flex-direction: column-reverse;
+  }
+
+  .a_d_s-item-seller {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+    h3 {
+      width: 100%;
+    }
+  }
+  .seller-card {
+    flex-direction: row;
+    width: 100%;
+    max-width: inherit;
+  }
+
+  .seller-image {
+    flex-shrink: 0;
+    margin-right: 24px;
+  }
+
+  .seller-contacts {
+    width: 100%;
+  }
+
+  .seller-info {
+    flex-shrink: 1;
+  }
+
+  .seller-info > *{
+    text-align: left;
+  }
+
+  .seller-dept::before {
+    left: 0;
+    margin-left: 0;
+  }
+
+  .seller-row {
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .seller-contacts {
+    padding-left: 164px;
+  }
+  .seller-phone {
+    margin-top: 0;
+    margin-left: 16px;
+    a {
+      display: block;
+    }
+  }
+  .seller-email {
+    br {
+      display: none;
+    }
+    a {
+      margin-left: 16px;
+    }
   }
 }
 
@@ -296,5 +383,22 @@ a.card-city {
     margin-left: 0;
     margin-right: 0;
     width: 100%;
+  }
+}
+
+@media (max-width: 440px) {
+  .seller-card {
+    flex-direction: column;
+  }
+  .seller-info > * {
+    text-align: center;
+  }
+
+  .seller-dept::before {
+    left: 50%;
+    margin-left: -35px;
+  }
+  .seller-contacts {
+    padding-left: 0;
   }
 }
