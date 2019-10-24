@@ -189,22 +189,41 @@ input.main-page-search-input {
   overflow: hidden;
   &:nth-child(2) {
     flex-direction: row-reverse;
+    .benefits-list-image {
+      width: 65%;
+    }
     .benefits-list-info {
+      width: 35%;
       padding-left: 80px;
+    }
+    .benefits-img {
+      padding-bottom: 108.1081%;
     }
   }
 }
 
-.benefits-list-image {
-  height: 800px;
+.benefits-img {
+  width: 100%;
+  position: relative;
+  padding-bottom: 123.45679%;
   img {
     height: 100%;
-    width: auto;
-    object-fit: contain;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
   }
 }
 
+.benefits-list-image {
+  width: 57%;
+  height: 800px;
+
+}
+
 .benefits-list-info {
+  width: 43%;
   margin-top: 208px;
   padding-left: 52px;
   padding-right: 40px;
@@ -238,21 +257,23 @@ input.main-page-search-input {
 
 @media (max-width: 1024px) {
   .benefits-list-item {
+    &:nth-child(2n) {
+      .benefits-list-image, .benefits-list-info {
 
+        width: 50%;
+      }
+
+    }
   }
 
   .benefits-list-image {
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
     width: 50%;
     height: auto;
     flex-shrink: 0;
   }
 
   .benefits-list-info {
+    width: 50%;
     margin-top: 0;
     display: flex;
     flex-direction: column;
@@ -339,21 +360,35 @@ input.main-page-search-input {
     flex-direction: column;
     &:nth-child(2n) {
       flex-direction: column;
+      .benefits-list-image {
+        height: 346px;
+        width: 100%;
+      }
+      .benefits-list-info {
+        width: 100%;
+      }
+      .benefits-img {
+        padding-bottom: 0;
+        height: 100%;
+      }
     }
   }
   .benefits-list-info {
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-top: 24px;
-    padding-bottom: 40px;
+    padding: 24px 32px 40px;
     text-align: center;
+    width: 100%;
   }
   .benefits-list-image {
     height: 346px;
     width: 100%;
     img {
+      position: static;
       object-position: center top;
     }
+  }
+  .benefits-img {
+    padding-bottom: 0;
+    height: 100%;
   }
   .main-page-statistics {
     margin-bottom: 90px;
