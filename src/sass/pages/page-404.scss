@@ -74,3 +74,57 @@
   top: 280px;
 
 }
+
+@media (max-width: 900px) {
+  .site-wrapper {
+    overflow-x: hidden;
+  }
+  .peach {
+    width: 200px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .num404 {
+    font-size: 200px;
+    line-height: 250px;
+  }
+  .broc404 {
+    width: 90px;
+    img {
+      width: 100%;
+    }
+  }
+  .onion404 {
+    width: 90px;
+    img {
+      width: 100%;
+    }
+  }
+  .str404 {
+    top: -100px;
+  }
+}
+
+
+@media (max-width: 560px) {
+  .onion404, .broc404  {
+    top: 580px;
+  }
+}
+
+@media (max-width: 413px) {
+  .num404 {
+    font-size: 160px;
+    line-height: 200px;
+  }
+  .peach {
+    width: 140px;
+  }
+  .str404 {
+    left: -30px;
+  }
+}
