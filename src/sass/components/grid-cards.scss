@@ -20,6 +20,9 @@
   .grid-card-header {
     margin-bottom: 24px;
   }
+  .button {
+    margin-bottom: 0;
+  }
 }
 
 .grid-card-header {
@@ -34,6 +37,7 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: 24px;
+  color: $cDarkGrey;
   a {
     border-bottom: 0;
   }
@@ -60,6 +64,10 @@
     line-height: 19px;
     + p {
       margin-top: 19px;
+    }
+    .grid-card--promo & {
+      font-size: 16px;
+      line-height: 22px;
     }
   }
   p + .votes-form {
@@ -90,9 +98,13 @@
   margin-top: 56px;
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
   .events-actions-list {
-    margin-bottom: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .votes & {
+    margin-top: 0;
   }
 }
 
