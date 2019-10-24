@@ -11,7 +11,7 @@
 }
 
 .direction-item {
-  width: calc((100% - 80px) / 4);
+  width: 262px;
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 64px;
@@ -108,4 +108,16 @@
   font-size: 14px;
   line-height: 19px;
   border-bottom: 0;
+}
+
+@media (max-width: 896px) {
+  .direction-item {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 612px) {
+  .direction-item {
+    margin-bottom: 24px;
+  }
 }
