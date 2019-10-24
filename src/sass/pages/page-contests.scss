@@ -24,11 +24,14 @@
   margin-bottom: 32px;
   .contest-item-link {
     flex-direction: row-reverse;
+    border-radius: 50px 0 50px 0;
+    overflow: hidden;
   }
   .contest-image {
     width: 50%;
-    height: 456px;
+    height: auto;
     margin-bottom: 0;
+    padding-bottom: 0;
   }
   .contest-body {
     flex: 1;
@@ -59,11 +62,15 @@
 }
 
 .contest-image {
-  height: 276px;
-  margin-bottom: 40px;
+  width: 100%;
+  padding-bottom: 71.875%;
+  position: relative;
   overflow: hidden;
   border-radius: 10px 0 10px 0;
   img {
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -138,12 +145,16 @@
 }
 
 .winners-image {
-  height: 248px;
+  padding-bottom: 71.875%;
+  position: relative;
   border-radius: 10px 0 10px 0;
   overflow: hidden;
   img {
+    position: absolute;
     width: 100%;
     height: 100%;
+    left: 0;
+    top: 0;
     object-fit: cover;
   }
 }
@@ -194,4 +205,106 @@
   font-size: 80px;
   right: 16px;
   top: -14px;
+}
+
+
+@media (max-width: 1024px) {
+  .contest-item--big {
+    .contest-name {
+      font-size: 36px;
+      line-height: 44px;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .contest-detail-main {
+    width: calc((100% - 40px) / 2);
+  }
+  .contest-detail-aside {
+    margin-left: 40px;
+    width: calc((100% - 40px) / 2);
+  }
+  .contest-prize-image img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .winners-item {
+    width: calc((100% - 20px) / 2);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .contest-item {
+    width: calc((100% - 20px) / 2);
+  }
+  .contest-item--big {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .contest-item--big {
+    .contest-item-link {
+      flex-direction: column;
+    }
+    .contest-image {
+      width: 100%;
+      padding-bottom: 71.875%;
+      position: relative;
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+      }
+
+    }
+
+    .contest-body {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .contest-detail {
+    flex-direction: column;
+  }
+  .contest-detail-main {
+    width: 100%;
+  }
+  .contest-detail-aside {
+    margin-left: 0;
+    width: 100%;
+  }
+  .contest-prizes {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .contest-item {
+    width: 100%;
+  }
+  .contest-body {
+    padding: 24px;
+  }
+  .contest-item--big {
+    .contest-body {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+
+  .winners-item {
+    width: 100%
+  }
+
+
 }
