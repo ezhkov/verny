@@ -46,12 +46,37 @@
       </ul>
     </section>
     <section class="main-page-benefits">
+      <svg width="0" height="0" style="position: absolute;">
+        <defs>
+          <clipPath id="rightClip" clipPathUnits="objectBoundingBox" transform="scale(0.00155, 0.00126)">
+            <path d="M0 50C0 22.3858 22.3858 0 50 0H648L439 800H50C22.3858 800 0 777.614 0 750V50Z"/>
+          </clipPath>
+        </defs>
+      </svg>
+      <svg width="0" height="0" style="position: absolute;">
+        <defs>
+          <clipPath id="leftClip" clipPathUnits="objectBoundingBox" transform="scale(0.00135, 0.00125)">
+            <path d="M740 50C740 22.3858 717.614 0 690 0H209L0 800H690C717.614 800 740 777.614 740 750V50Z"/>
+          </clipPath>
+        </defs>
+      </svg>
+      <svg width="0" height="0" style="position: absolute;">
+        <defs>
+          <clipPath id="bottomClip" clipPathUnits="objectBoundingBox" transform="scale(0.00289, 0.004608)">
+            <path d="M0 50C0 22.3858 22.3858 0 50 0H296C323.614 0 346 22.3858 346 50V161.5L0 217V50Z"/>
+          </clipPath>
+        </defs>
+      </svg>
+
       <ul class="benefits-list">
         <li class="benefits-list-item">
           <div class="benefits-list-image">
-            <div class="benefits-img">
-              <img src="img/img_block1.jpg" srcset="img/img_block1.jpg, img/img_block1@2x.jpg 2x"/>
-            </div>
+            <picture class="benefits-img">
+              <source srcset="img/img_block_hor1.jpg" media="(max-width: 768px)"/>
+              <source srcset="img/img_block_hor1@2x.jpg 2x" media="(max-width: 768px)"/>
+              <source srcset="img/img_block1@2x.jpg 2x"/>
+              <img src="img/img_block1.jpg"/>
+            </picture>
           </div>
           <div class="benefits-list-info">
             <h2 class="benefits-header">Портфель<br/>директора</h2>
@@ -61,9 +86,12 @@
         </li>
         <li class="benefits-list-item">
           <div class="benefits-list-image">
-            <div class="benefits-img">
-              <img src="img/img_block2.jpg" srcset="img/img_block2.jpg, img/img_block2@2x.jpg 2x"/>
-            </div>
+            <picture class="benefits-img">
+              <source srcset="img/img_block_hor2.jpg" media="(max-width: 768px)"/>
+              <source srcset="img/img_block_hor2@2x.jpg 2x" media="(max-width: 768px)"/>
+              <source srcset="img/img_block2@2x.jpg 2x"/>
+              <img src="img/img_block2.jpg"/>
+            </picture>
           </div>
           <div class="benefits-list-info">
             <h2 class="benefits-header">Новому<br/>сотруднику</h2>
@@ -73,9 +101,12 @@
         </li>
         <li class="benefits-list-item">
           <div class="benefits-list-image">
-            <div class="benefits-img">
-              <img src="img/img_block3.jpg" srcset="img/img_block3.jpg, img/img_block3@2x.jpg 2x"/>
-            </div>
+            <picture class="benefits-img">
+              <source srcset="img/img_block_hor3.jpg" media="(max-width: 768px)"/>
+              <source srcset="img/img_block_hor3@2x.jpg 2x" media="(max-width: 768px)"/>
+              <source srcset="img/img_block3@2x.jpg 2x"/>
+              <img src="img/img_block3.jpg"/>
+            </picture>
           </div>
           <div class="benefits-list-info">
             <h2 class="benefits-header">Корпоративная<br/>культура</h2>
